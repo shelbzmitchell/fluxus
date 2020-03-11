@@ -1,0 +1,95 @@
+.header {
+  border: 2.5px solid black;
+  margin: 0.5rem;
+  height: 12rem;
+
+  &__logo-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__links {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2.5px solid black;
+  }
+
+  &__profile {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__profile-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: grey;
+  }
+
+  &__search {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__search-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@include medium {
+  .header {
+    display: flex;
+    border-bottom: 5px solid black;
+
+    &__logo-container {
+      width: 50%;
+      height: 100%;
+      justify-content: flex-start;
+      margin-left: 2rem;
+    }
+
+    &__logo {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    &__links {
+      width: 50%;
+      height: 100%;
+      border: none;
+      justify-content: flex-end;
+    }
+
+    &__profile {
+      width: fit-content;
+      margin-right: 4rem;
+    }
+
+    &__profile-icon {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    &__search {
+      width: fit-content;
+      margin-right: 2rem;
+    }
+
+    &__search-icon {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}
