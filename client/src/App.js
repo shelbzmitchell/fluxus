@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import axios from "axios";
 import "../src/styles/main.css";
+
 //import components
 import Header from "./components/Header";
 import ListSubheader from "./components/ListSubheader";
@@ -15,6 +17,12 @@ export default class App extends Component {
       projects: [],
       doneLoading: false
     };
+  }
+
+  componentDidMount() {
+    axios.get("/api/profiles").then(response => {
+      console.log(response);
+    });
   }
 
   render() {
