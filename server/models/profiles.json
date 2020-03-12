@@ -3,25 +3,26 @@
     "id": "main",
     "firstname": "Jannik",
     "lastname": "Forsyth",
-    "profilephoto": "",
-    "artphoto": "",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
     "website": "https://joancornella.net/en/",
     "bio": "My work is a mixture of lorem ipsum and whatever all the things. I've been based in Vancouver my whole life and am very excited to start creating sculptures out of tinfoil",
     "city": "Vancouver",
-    "province": "",
-    "country": "",
-    "lookingtocollaborate": "",
-    "skills": "",
+    "province": "BC",
+    "country": "Canada",
+    "lookingtocollaborate": "true",
+    "medium": "Painting, Photography, Video",
+    "style": "Surrealism",
     "projects": [
       {
-        "projectname": "",
-        "projectlink": ""
+        "projectname": "Cupcake Display",
+        "projectlink": "link to project"
       }
     ],
     "personalart": [
       {
-        "personalartlabel": "",
-        "personalartimage": ""
+        "personalartlabel": "Surrealist Paintings",
+        "personalartimage": "images"
       }
     ]
   }

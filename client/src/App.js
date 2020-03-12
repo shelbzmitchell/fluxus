@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../src/styles/main.css";
 //import components
 import Header from "./components/Header";
+import Profile from "./components/Profile";
 
 export default class App extends Component {
   constructor() {
@@ -18,6 +19,7 @@ export default class App extends Component {
     return (
       <>
         <Header />
+        <Profile />
       </>
     );
     // }
