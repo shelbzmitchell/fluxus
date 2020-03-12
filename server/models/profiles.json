@@ -1,27 +1,221 @@
 [
   {
     "id": "main",
-    "firstname": "Jannik",
-    "lastname": "Forsyth",
+    "firstname": "Adrienne",
+    "lastname": "Mountain",
     "profilephoto": "file:///",
     "artphoto": "artphoto",
-    "website": "https://joancornella.net/en/",
-    "bio": "My work is a mixture of lorem ipsum and whatever all the things. I've been based in Vancouver my whole life and am very excited to start creating sculptures out of tinfoil",
-    "city": "Vancouver",
-    "province": "BC",
-    "country": "Canada",
+    "website": "http://adriennemountain.com/",
+    "bio": "",
+    "city": "Yucca Valley",
+    "province": "California",
+    "country": "USA",
     "lookingtocollaborate": "true",
-    "medium": "Painting, Photography, Video",
-    "style": "Surrealism",
+    "medium": "Music Videos, Film, Painting, Animation, Live Projection",
     "projects": [
       {
-        "projectname": "Cupcake Display",
-        "projectlink": "link to project"
+        "projectname": "Animation Road Trip"
+      },
+      {
+        "projectname": "Yucca Valley Sound Collection"
+      },
+      {
+        "projectname": "Hands"
+      },
+      {
+        "projectname": "I love my mom"
       }
     ],
     "personalart": [
       {
-        "personalartlabel": "Surrealist Paintings",
+        "personalarttitle": "Lady Strips",
+        "personalartdescription": "A sultry strip tease with a surprise ;)",
+        "personalartimage": "image"
+      },
+      {
+        "personalarttitle": "Pillow Party",
+        "personalartdescription": "Live interactive projection performance and installation in collaboration with Sonia Beckwith Cole.",
+        "personalartimage": "image"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "firstname": "Mallory",
+    "lastname": "Phillips",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "https://birdsarentreal.com/",
+    "bio": "Let's get wacky",
+    "city": "Vancouver",
+    "province": "BC",
+    "country": "Canada",
+    "lookingtocollaborate": "false",
+    "medium": "Tattoos, Make up, Performance Art, Embroidery",
+    "projects": [
+      {
+        "projectname": "Bob Ross Painting"
+      },
+      {
+        "projectname": "People we know - Painting the Table"
+      }
+    ],
+    "personalart": [
+      {
+        "personalartlabel": "Bitches Love Patchouli",
+        "personalartdescription": "",
+        "personalartimage": "image"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "firstname": "Bernice",
+    "lastname": "Fortenbacher",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "http://www.zaledavis.com/",
+    "bio": "I am a musician, artist, and mechanical engineer",
+    "city": "Vancouver",
+    "province": "BC",
+    "country": "Canada",
+    "lookingtocollaborate": "true",
+    "medium": "Painting, Photography, Music, Cartoons",
+    "projects": [
+      {
+        "projectname": "Little Sadie"
+      },
+      {
+        "projectname": "Bob Ross Painting"
+      },
+      {
+        "projectname": "People we know - Painting the Table"
+      }
+    ],
+    "personalart": [
+      {
+        "personalartlabel": "Zale Art 1",
+        "personalartdescription": "A thing!",
+        "personalartimage": "image"
+      },
+      {
+        "personalartlabel": "Zale Art 2",
+        "personalartdescription": "Another thing",
+        "personalartimage": "image"
+      },
+      {
+        "personalartlabel": "Zale Art 3",
+        "personalartdescription": "Wow holy there's a third thing",
+        "personalartimage": "image"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "firstname": "Penny",
+    "lastname": "Xavier",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "",
+    "bio": "",
+    "city": "Vancouver",
+    "province": "BC",
+    "country": "Canada",
+    "lookingtocollaborate": "true",
+    "medium": "Poetry, Ink Drawing, Painting",
+    "projects": [
+      {
+        "projectname": "Peach"
+      },
+      {
+        "projectname": "People we know - Painting the Table"
+      }
+    ],
+    "personalart": [
+      {
+        "personalartlabel": "To My Lady",
+        "personalartdescription": "A poem about a slowly dying succulent",
+        "personalartimage": "images"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "firstname": "Pablo",
+    "lastname": "Evergritz",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "https://joancornella.net/en/",
+    "bio": "I have a new Samsung, it takes shit pics",
+    "city": "Cumberland",
+    "province": "BC",
+    "country": "Canada",
+    "lookingtocollaborate": "true",
+    "medium": "Photography, Performance Art",
+    "projects": [
+      {
+        "projectname": "This is my gallery"
+      }
+    ],
+    "personalart": [
+      {
+        "personalartlabel": "Welcome to the Farm",
+        "personalartdescription": "",
+        "personalartimage": "images"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "firstname": "Craig",
+    "lastname": "Horan",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "",
+    "bio": "Don't worry, be happy",
+    "city": "Montreal",
+    "province": "QC",
+    "country": "Canada",
+    "lookingtocollaborate": "true",
+    "medium": "",
+    "projects": [
+      {
+        "projectname": "Cupcakes at Office Buildings"
+      }
+    ],
+    "personalart": [
+      {
+        "personalartlabel": "Toiletries",
+        "personalartdescription": "A painting of some toiletries",
+        "personalartimage": "images"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "firstname": "Jannik",
+    "lastname": "Forsyth",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "",
+    "bio": "I don't know what I'm doing",
+    "city": "Vancouver",
+    "province": "BC",
+    "country": "Canada",
+    "lookingtocollaborate": "false",
+    "medium": "Miniatures Painting, Sketching, Electronic Art",
+    "projects": [
+      {
+        "projectname": "Bob Ross Painting"
+      },
+      {
+        "projectname": "People we know - Painting the Table"
+      }
+    ],
+    "personalart": [
+      {
+        "personalartlabel": "",
+        "personalartdescription": "",
         "personalartimage": "images"
       }
     ]
