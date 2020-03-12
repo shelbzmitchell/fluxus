@@ -1,8 +1,11 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../src/styles/main.css";
 //import components
 import Header from "./components/Header";
+import ListSubheader from "./components/ListSubheader";
 import Profile from "./components/Profile";
+import ProfileList from "./components/ProfileList";
 
 export default class App extends Component {
   constructor() {
@@ -18,8 +21,19 @@ export default class App extends Component {
     // if (this.state.doneLoading === true) {
     return (
       <>
-        <Header />
-        <Profile />
+        <Router>
+          <Switch>
+            <Route path="/" exact>
+              <Header />
+              <Profile />
+            </Route>
+            <Route path="/search">
+              <Header />
+              <ListSubheader />
+              <ProfileList />
+            </Route>
+          </Switch>
+        </Router>
       </>
     );
     // }
