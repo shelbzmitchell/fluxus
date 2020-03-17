@@ -14,9 +14,11 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
+      profile: {},
       profiles: [],
       projects: [],
-      loggedIn: false
+      loggedIn: false,
+      doneLoading: false
     };
   }
 
@@ -24,10 +26,11 @@ export default class App extends Component {
     axios
       .get("/api/profiles")
       .then(response => {
-        console.log(response.data);
-
         this.setState({
-          profiles: response.data
+          profiles: response.data,
+          profile: response.data[0],
+          loggedIn: true,
+          doneLoading: true
         });
       })
       .catch(err => {
@@ -48,31 +51,34 @@ export default class App extends Component {
   };
 
   render() {
-    console.log(this.state);
-    return (
-      <>
-        <Router>
-          <Header
-            loggedIn={this.state.loggedIn}
-            logoutClick={this.logoutClick}
-          />
-          <Switch>
-            <Route
-              path="/"
-              render={() => <Home loginClick={this.loginClick} />}
-              exact
+    if (this.state.doneLoading === true) {
+      return (
+        <>
+          <Router>
+            <Header
+              loggedIn={this.state.loggedIn}
+              logoutClick={this.logoutClick}
             />
-            <Route
-              path="/profile"
-              render={() => <Profile profiles={this.state.profiles} />}
-            />
-            <Route path="/search">
-              <ListSubheader />
-              <ProfileList />
-            </Route>
-          </Switch>
-        </Router>
-      </>
-    );
+            <Switch>
+              <Route
+                path="/"
+                render={() => <Home loginClick={this.loginClick} />}
+                exact
+              />
+              <Route
+                path="/profile"
+                render={() => <Profile profile={this.state.profile} />}
+              />
+              <Route path="/search">
+                <ListSubheader />
+                <ProfileList />
+              </Route>
+            </Switch>
+          </Router>
+        </>
+      );
+    } else {
+      return <div>Loading...</div>;
+    }
   }
 }

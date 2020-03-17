@@ -6,7 +6,6 @@ import searchIcon from "../assets/icons/search-icon.svg";
 import logo from "../assets/icons/logo-icon.png";
 
 const Header = props => {
-  console.log(props.loggedIn);
   return (
     <section className="header">
       <div className="header__logo-container">
@@ -15,10 +14,14 @@ const Header = props => {
       {props.loggedIn ? (
         <div className="header__links">
           <div className="header__profile">
-            <div className="header__profile-icon"></div>
+            <Link to={`/profile`}>
+              <div className="header__profile-icon"></div>
+            </Link>
           </div>
           <div className="header__search">
-            <img className="header__search-icon" src={searchIcon} />
+            <Link to={`/search`}>
+              <img className="header__search-icon" src={searchIcon} />
+            </Link>
           </div>
           <div className="header__logout">
             <Link to={`/`} onClick={() => props.logoutClick()}>

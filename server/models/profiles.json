@@ -3,10 +3,10 @@
     "id": "main",
     "firstname": "Adrienne",
     "lastname": "Mountain",
-    "profilephoto": "file:///",
+    "profilephoto": "file:/// ",
     "artphoto": "artphoto",
     "website": "http://adriennemountain.com/",
-    "bio": "",
+    "bio": "I'm an experimental animator and video artist originally from Toronto, Canada. My work often explores the metaphysical, as well as body politics and female identity.",
     "city": "Yucca Valley",
     "province": "California",
     "country": "USA",
@@ -25,14 +25,14 @@
     ],
     "personalart": [
       {
-        "personalarttitle": "Lady Strips",
-        "personalartdescription": "A sultry strip tease with a surprise ;)",
-        "personalartimage": "image"
+        "title": "Lady Strips",
+        "description": "A sultry strip tease with a surprise ;)",
+        "image": "image"
       },
       {
-        "personalarttitle": "Pillow Party",
-        "personalartdescription": "Live interactive projection performance and installation in collaboration with Sonia Beckwith Cole.",
-        "personalartimage": "image"
+        "title": "Pillow Party",
+        "description": "Live interactive projection performance and installation in collaboration with Sonia Beckwith Cole.",
+        "image": "image"
       }
     ]
   },

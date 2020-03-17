@@ -19,7 +19,8 @@ router.get("/", (req, res) => {
       country: profile.country,
       lookingtocollaborate: profile.lookingtocollaborate,
       medium: profile.medium,
-      projects: profile.projects
+      projects: profile.projects,
+      personalart: profile.personalart
     };
   });
   res.json(profileList);
