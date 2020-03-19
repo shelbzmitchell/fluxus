@@ -6,9 +6,9 @@ import "../src/styles/main.css";
 //import components
 import Header from "./components/Header";
 import Home from "./components/Home";
-import ListSubheader from "./components/ListSubheader";
 import Profile from "./components/Profile";
 import ProfileList from "./components/ProfileList";
+import ProjectList from "./components/ProjectList";
 
 export default class App extends Component {
   constructor() {
@@ -69,10 +69,15 @@ export default class App extends Component {
                 path="/profile"
                 render={() => <Profile profile={this.state.profile} />}
               />
-              <Route path="/search">
-                <ListSubheader />
-                <ProfileList />
-              </Route>
+              <Route
+                path="/profile/:id"
+                render={() => <Profile profile={this.state.profile} />}
+              />
+              <Route
+                path="/search/profiles"
+                render={() => <ProfileList profiles={this.state.profiles} />}
+              />
+              <Route path="/search/projects" render={() => <ProjectList />} />
             </Switch>
           </Router>
         </>

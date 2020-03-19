@@ -20,4 +20,10 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 @import "./partials/header";
+@import "./partials/list-subheader";
+@import "./partials/profile";

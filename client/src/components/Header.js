@@ -19,7 +19,7 @@ const Header = props => {
             </Link>
           </div>
           <div className="header__search">
-            <Link to={`/search`}>
+            <Link to={`/search/profiles`}>
               <img className="header__search-icon" src={searchIcon} />
             </Link>
           </div>

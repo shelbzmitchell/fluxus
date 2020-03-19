@@ -1,0 +1,10 @@
+.subheader {
+  width: 100%;
+  display: flex;
+
+  &__container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}

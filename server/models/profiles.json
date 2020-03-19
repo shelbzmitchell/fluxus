@@ -200,13 +200,16 @@
     "province": "BC",
     "country": "Canada",
     "lookingtocollaborate": "false",
-    "medium": "Miniatures Painting, Sketching, Electronic Art",
+    "medium": "Miniatures Painting, Map Drawing, Artistic Explosions",
     "projects": [
       {
         "projectname": "Bob Ross Painting"
       },
       {
         "projectname": "People we know - Painting the Table"
+      },
+      {
+        "projectname": "BearGrant"
       }
     ],
     "personalart": [
@@ -214,6 +217,38 @@
         "personalartlabel": "",
         "personalartdescription": "",
         "personalartimage": "images"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "firstname": "Quentin",
+    "lastname": "Lochburg",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "",
+    "bio": "Film is life",
+    "city": "Vancouver",
+    "province": "BC",
+    "country": "Canada",
+    "lookingtocollaborate": "true",
+    "medium": "Miniatures Painting, Film",
+    "projects": [
+      {
+        "projectname": "Bob Ross Painting"
+      },
+      {
+        "projectname": "People we know - Painting the Table"
+      },
+      {
+        "projectname": "BearGrant"
+      }
+    ],
+    "personalart": [
+      {
+        "personalartlabel": "Movie",
+        "personalartdescription": "Description of movie",
+        "personalartimage": "still from movie"
       }
     ]
   }
