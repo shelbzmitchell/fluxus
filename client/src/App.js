@@ -11,8 +11,8 @@ import ProfileList from "./components/ProfileList";
 import ProjectList from "./components/ProjectList";
 
 export default class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       profile: {},
       profiles: [],
@@ -24,11 +24,13 @@ export default class App extends Component {
 
   componentDidMount() {
     axios
-      .get("/api/profiles")
+      .all([axios.get("/api/profiles"), axios.get("/api/projects")])
+
       .then(response => {
         this.setState({
-          profiles: response.data,
-          profile: response.data[0],
+          profiles: response[0].data,
+          profile: response[0].data[0],
+          projects: response[1].data,
           loggedIn: true,
           doneLoading: true
         });
@@ -66,18 +68,33 @@ export default class App extends Component {
                 exact
               />
               <Route
-                path="/profile"
-                render={() => <Profile profile={this.state.profile} />}
+                path="/main"
+                render={props => (
+                  <Profile {...props} profile={this.state.profile} />
+                )}
               />
               <Route
                 path="/profile/:id"
-                render={() => <Profile profile={this.state.profile} />}
+                render={props => (
+                  <Profile
+                    {...props}
+                    profile={this.state.profiles[props.match.params.id]}
+                    profiles={this.state.profiles}
+                  />
+                )}
               />
               <Route
                 path="/search/profiles"
-                render={() => <ProfileList profiles={this.state.profiles} />}
+                render={props => (
+                  <ProfileList {...props} profiles={this.state.profiles} />
+                )}
               />
-              <Route path="/search/projects" render={() => <ProjectList />} />
+              <Route
+                path="/search/projects"
+                render={props => (
+                  <ProjectList {...props} projects={this.state.projects} />
+                )}
+              />
             </Switch>
           </Router>
         </>

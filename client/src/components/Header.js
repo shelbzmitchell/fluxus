@@ -14,7 +14,7 @@ const Header = props => {
       {props.loggedIn ? (
         <div className="header__links">
           <div className="header__profile">
-            <Link to={`/profile`}>
+            <Link to={`/main`}>
               <div className="header__profile-icon"></div>
             </Link>
           </div>

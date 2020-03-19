@@ -1,9 +1,9 @@
 [
   {
-    "id": "main",
+    "id": "0",
     "firstname": "Adrienne",
     "lastname": "Mountain",
-    "profilephoto": "file:/// ",
+    "profilephoto": "file: ",
     "artphoto": "artphoto",
     "website": "http://adriennemountain.com/",
     "bio": "I'm an experimental animator and video artist originally from Toronto, Canada. My work often explores the metaphysical, as well as body politics and female identity.",
@@ -13,9 +13,6 @@
     "lookingtocollaborate": "true",
     "medium": "Music Videos, Film, Painting, Animation, Live Projection",
     "projects": [
-      {
-        "projectname": "Animation Road Trip"
-      },
       {
         "projectname": "Yucca Valley Sound Collection"
       },
@@ -37,7 +34,7 @@
     ]
   },
   {
-    "id": "2",
+    "id": "1",
     "firstname": "Mallory",
     "lastname": "Phillips",
     "profilephoto": "file:///",
@@ -66,7 +63,7 @@
     ]
   },
   {
-    "id": "3",
+    "id": "2",
     "firstname": "Bernice",
     "lastname": "Fortenbacher",
     "profilephoto": "file:///",
@@ -79,9 +76,6 @@
     "lookingtocollaborate": "true",
     "medium": "Painting, Photography, Music, Cartoons",
     "projects": [
-      {
-        "projectname": "Little Sadie"
-      },
       {
         "projectname": "Bob Ross Painting"
       },
@@ -108,7 +102,7 @@
     ]
   },
   {
-    "id": "4",
+    "id": "3",
     "firstname": "Penny",
     "lastname": "Xavier",
     "profilephoto": "file:///",
@@ -137,7 +131,7 @@
     ]
   },
   {
-    "id": "5",
+    "id": "4",
     "firstname": "Pablo",
     "lastname": "Evergritz",
     "profilephoto": "file:///",
@@ -149,11 +143,7 @@
     "country": "Canada",
     "lookingtocollaborate": "true",
     "medium": "Photography, Performance Art",
-    "projects": [
-      {
-        "projectname": "This is my gallery"
-      }
-    ],
+    "projects": [],
     "personalart": [
       {
         "personalartlabel": "Welcome to the Farm",
@@ -163,7 +153,7 @@
     ]
   },
   {
-    "id": "6",
+    "id": "5",
     "firstname": "Craig",
     "lastname": "Horan",
     "profilephoto": "file:///",
@@ -189,7 +179,7 @@
     ]
   },
   {
-    "id": "7",
+    "id": "6",
     "firstname": "Jannik",
     "lastname": "Forsyth",
     "profilephoto": "file:///",
@@ -221,7 +211,7 @@
     ]
   },
   {
-    "id": "8",
+    "id": "7",
     "firstname": "Quentin",
     "lastname": "Lochburg",
     "profilephoto": "file:///",
