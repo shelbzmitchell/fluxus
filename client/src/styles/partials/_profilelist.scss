@@ -1,0 +1,83 @@
+.profiles {
+  margin: 0 1rem;
+  &__container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    border: 1px solid black;
+  }
+  &__item-container {
+    display: flex;
+    &--1 {
+      width: 30%;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+    }
+    &--2 {
+      width: 70%;
+      align-items: center;
+      @include mobile-subheader;
+    }
+    &--3 {
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    &--4 {
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__pic {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+  }
+}
+
+@include medium {
+  .profiles {
+    margin: 0 1.5rem;
+    &__item-container {
+      &--1 {
+        width: 15%;
+      }
+      &--3 {
+        width: 100%;
+        margin-left: 15%;
+      }
+      &--4 {
+        margin-left: 15%;
+      }
+    }
+  }
+}
+
+@include huge {
+  .profiles {
+    margin: 0 11rem;
+    &__item-container {
+      align-items: center;
+      flex-wrap: nowrap;
+
+      &--1 {
+        padding: 0;
+        width: 10%;
+        justify-content: center;
+      }
+      &--2 {
+        width: 20%;
+      }
+      &--3 {
+        width: 20%;
+        margin: 0;
+      }
+      &--4 {
+        width: 40%;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -22,8 +22,12 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 @import "./partials/header";
 @import "./partials/list-subheader";
 @import "./partials/profile";
+@import "./partials/project";
+@import "./partials/profilelist";
+@import "./partials/projectlist";

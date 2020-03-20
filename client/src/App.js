@@ -7,6 +7,7 @@ import "../src/styles/main.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
+import Project from "./components/Project";
 import ProfileList from "./components/ProfileList";
 import ProjectList from "./components/ProjectList";
 
@@ -27,6 +28,8 @@ export default class App extends Component {
       .all([axios.get("/api/profiles"), axios.get("/api/projects")])
 
       .then(response => {
+        console.log(response[0].data);
+
         this.setState({
           profiles: response[0].data,
           profile: response[0].data[0],
@@ -80,6 +83,15 @@ export default class App extends Component {
                     {...props}
                     profile={this.state.profiles[props.match.params.id]}
                     profiles={this.state.profiles}
+                  />
+                )}
+              />
+              <Route
+                path="/project/:id"
+                render={props => (
+                  <Project
+                    {...props}
+                    project={this.state.projects[props.match.params.id]}
                   />
                 )}
               />

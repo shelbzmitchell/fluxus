@@ -1,6 +1,7 @@
 [
   {
-    "id": "1",
+    "id": "0",
+    "photo": "",
     "title": "Yucca Valley Sound Collection",
     "creatorfirstname": "Adrienne",
     "creatorlastname": "Mountain",
@@ -10,10 +11,12 @@
     "private": "false",
     "city": "Yucca Valley",
     "province": "California",
-    "country": "USA"
+    "country": "USA",
+    "onlineoption": "false"
   },
   {
-    "id": "2",
+    "id": "1",
+    "photo": "",
     "title": "Ontario Cottage Fabrics",
     "creatorfirstname": "Adrienne",
     "creatorlastname": "Mountain",
@@ -26,10 +29,12 @@
     "private": "true",
     "city": "Peterborough",
     "province": "Ontario",
-    "country": "Canada"
+    "country": "Canada",
+    "onlineoption": "false"
   },
   {
-    "id": "3",
+    "id": "2",
+    "photo": "",
     "title": "Bob Ross Painting",
     "creatorfirstname": "Quentin",
     "creatorlastname": "Lochburg",
@@ -45,10 +50,12 @@
     "private": "false",
     "city": "Vancouver",
     "province": "BC",
-    "country": "Canada"
+    "country": "Canada",
+    "onlineoption": "false"
   },
   {
-    "id": "4",
+    "id": "3",
+    "photo": "",
     "title": "People we know - Painting the Table",
     "creatorfirstname": "Penny",
     "creatorlastname": "Xavier",
@@ -63,10 +70,12 @@
     "private": "true",
     "city": "Vancouver",
     "province": "BC",
-    "country": "Canada"
+    "country": "Canada",
+    "onlineoption": "false"
   },
   {
-    "id": "5",
+    "id": "4",
+    "photo": "",
     "title": "Peach",
     "creatorfirstname": "Penny",
     "creatorlastname": "Xavier",
@@ -76,10 +85,12 @@
     "private": "false",
     "city": "Vancouver",
     "province": "BC",
-    "country": "Canada"
+    "country": "Canada",
+    "onlineoption": "true"
   },
   {
-    "id": "6",
+    "id": "5",
+    "photo": "",
     "title": "Cupcakes at Office Buildings",
     "creatorfirstname": "Craig",
     "creatorlastname": "Horan",
@@ -89,10 +100,12 @@
     "private": "false",
     "city": "Montreal",
     "province": "QC",
-    "country": "Canada"
+    "country": "Canada",
+    "onlineoption": "false"
   },
   {
-    "id": "7",
+    "id": "6",
+    "photo": "",
     "title": "Bearanoia",
     "creatorfirstname": "Quentin",
     "creatorlastname": "Lochburg",
@@ -102,6 +115,7 @@
     "private": "true",
     "city": "Vancouver",
     "province": "BC",
-    "country": "Canada"
+    "country": "Canada",
+    "onlineoption": "false"
   }
 ]

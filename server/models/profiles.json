@@ -3,7 +3,7 @@
     "id": "0",
     "firstname": "Adrienne",
     "lastname": "Mountain",
-    "profilephoto": "file: ",
+    "profilephoto": "images/image.jpg",
     "artphoto": "artphoto",
     "website": "http://adriennemountain.com/",
     "bio": "I'm an experimental animator and video artist originally from Toronto, Canada. My work often explores the metaphysical, as well as body politics and female identity.",
@@ -14,10 +14,12 @@
     "medium": "Music Videos, Film, Painting, Animation, Live Projection",
     "projects": [
       {
-        "projectname": "Yucca Valley Sound Collection"
+        "projectname": "Yucca Valley Sound Collection",
+        "id": "0"
       },
       {
-        "projectname": "Ontario Cottage Fabrics"
+        "projectname": "Ontario Cottage Fabrics",
+        "id": "1"
       }
     ],
     "personalart": [
@@ -48,10 +50,12 @@
     "medium": "Tattoos, Make up, Performance Art, Embroidery",
     "projects": [
       {
-        "projectname": "Bob Ross Painting"
+        "projectname": "Bob Ross Painting",
+        "id": "2"
       },
       {
-        "projectname": "People we know - Painting the Table"
+        "projectname": "People we know - Painting the Table",
+        "id": "3"
       }
     ],
     "personalart": [
@@ -77,10 +81,12 @@
     "medium": "Painting, Photography, Music, Cartoons",
     "projects": [
       {
-        "projectname": "Bob Ross Painting"
+        "projectname": "Bob Ross Painting",
+        "id": "2"
       },
       {
-        "projectname": "People we know - Painting the Table"
+        "projectname": "People we know - Painting the Table",
+        "id": "3"
       }
     ],
     "personalart": [
@@ -116,10 +122,12 @@
     "medium": "Poetry, Ink Drawing, Painting",
     "projects": [
       {
-        "projectname": "Peach"
+        "projectname": "Peach",
+        "id": "4"
       },
       {
-        "projectname": "People we know - Painting the Table"
+        "projectname": "People we know - Painting the Table",
+        "id": "3"
       }
     ],
     "personalart": [
@@ -164,10 +172,11 @@
     "province": "QC",
     "country": "Canada",
     "lookingtocollaborate": "true",
-    "medium": "",
+    "medium": "Painting, Sketching, Perfomance Art, Sound",
     "projects": [
       {
-        "projectname": "Cupcakes at Office Buildings"
+        "projectname": "Cupcakes at Office Buildings",
+        "id": "5"
       }
     ],
     "personalart": [
@@ -193,13 +202,16 @@
     "medium": "Miniatures Painting, Map Drawing, Artistic Explosions",
     "projects": [
       {
-        "projectname": "Bob Ross Painting"
+        "projectname": "Bob Ross Painting",
+        "id": "2"
       },
       {
-        "projectname": "People we know - Painting the Table"
+        "projectname": "People we know - Painting the Table",
+        "id": "3"
       },
       {
-        "projectname": "BearGrant"
+        "projectname": "Bearanoia",
+        "id": "6"
       }
     ],
     "personalart": [
@@ -225,13 +237,16 @@
     "medium": "Miniatures Painting, Film",
     "projects": [
       {
-        "projectname": "Bob Ross Painting"
+        "projectname": "Bob Ross Painting",
+        "id": "2"
       },
       {
-        "projectname": "People we know - Painting the Table"
+        "projectname": "People we know - Painting the Table",
+        "id": "3"
       },
       {
-        "projectname": "BearGrant"
+        "projectname": "Bearanoia",
+        "id": "6"
       }
     ],
     "personalart": [

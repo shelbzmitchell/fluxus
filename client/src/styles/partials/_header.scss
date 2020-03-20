@@ -1,7 +1,6 @@
 .header {
-  border: 2.5px solid black;
-  margin: 0.5rem;
-  height: 12rem;
+  height: 9rem;
+  border-bottom: 1px solid black;
 
   &__logo-container {
     width: 100%;
@@ -21,7 +20,6 @@
     height: 50%;
     display: flex;
     align-items: center;
-    border-bottom: 2.5px solid black;
   }
 
   &__profile {

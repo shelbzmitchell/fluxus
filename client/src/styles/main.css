@@ -13,6 +13,8 @@
   src: url("../assets/fonts/Archivo/Archivo-SemiBold.ttf");
 }
 
+/* Mobile (small) fonts */
+/* Desktop and tablet (medium and huge) fonts */
 html,
 body {
   margin: 0;
@@ -36,12 +38,12 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .header {
-  border: 2.5px solid black;
-  margin: 0.5rem;
-  height: 12rem;
+  height: 9rem;
+  border-bottom: 1px solid black;
 }
 
 .header__logo-container {
@@ -72,7 +74,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 2.5px solid black;
 }
 
 .header__profile {
@@ -164,6 +165,7 @@ a {
 }
 
 .subheader__container {
+  margin-top: 1.5rem;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,5 +173,118 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.profile__project {
+  margin: 3rem 0;
+}
+
+.profiles {
+  margin: 0 1rem;
+}
+
+.profiles__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
+  border: 1px solid black;
+}
+
+.profiles__item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profiles__item-container--1 {
+  width: 30%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+}
+
+.profiles__item-container--2 {
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125rem;
+  /* 20px */
+  line-height: 1.375rem;
+  /* 24px */
+  font-family: "archivo-semibold";
+}
+
+.profiles__item-container--3 {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profiles__item-container--4 {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profiles__pic {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+}
+
+@media only screen and (min-width: 768px) {
+  .profiles {
+    margin: 0 1.5rem;
+  }
+  .profiles__item-container--1 {
+    width: 15%;
+  }
+  .profiles__item-container--3 {
+    width: 100%;
+    margin-left: 15%;
+  }
+  .profiles__item-container--4 {
+    margin-left: 15%;
+  }
+  /* placeholder */
+}
+
+@media only screen and (min-width: 1440px) {
+  .profiles {
+    margin: 0 11rem;
+  }
+  .profiles__item-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .profiles__item-container--1 {
+    padding: 0;
+    width: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .profiles__item-container--2 {
+    width: 20%;
+  }
+  .profiles__item-container--3 {
+    width: 20%;
+    margin: 0;
+  }
+  .profiles__item-container--4 {
+    width: 40%;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

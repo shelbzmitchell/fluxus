@@ -4,22 +4,32 @@ import ListSubheader from "../components/ListSubheader";
 
 const ProfileList = props => {
   return (
-    <>
+    <div className="profiles">
       <ListSubheader />
-      <h1>Profiles</h1>
-      {props.profiles.map(profile => {
+      {props.profiles.slice(1).map(profile => {
         return (
-          <div className="profiles">
-            <Link to={`/profile/${profile.id}`}>
-              <div className="profiles__pic"></div>
-              <p className="profiles__name">{`${profile.firstname} ${profile.lastname}`}</p>
-              <p className="profiles__location">{`${profile.city}, ${profile.country}`}</p>
-              <p className="profiles__medium">{profile.medium}</p>
+          <>
+            <Link className="profiles__link" to={`/profile/${profile.id}`}>
+              <div className="profiles__container">
+                <div className="profiles__item-container profiles__item-container--1">
+                  <div className="profiles__pic"></div>
+                </div>
+
+                <div className="profiles__item-container profiles__item-container--2">
+                  <p className="profiles__item">{`${profile.firstname} ${profile.lastname}`}</p>
+                </div>
+                <div className="profiles__item-container profiles__item-container--3">
+                  <p className="profiles__item">{`${profile.city}, ${profile.country}`}</p>
+                </div>
+                <div className="profiles__item-container profiles__item-container--4">
+                  <p className="profiles__item">{profile.medium}</p>
+                </div>
+              </div>
             </Link>
-          </div>
+          </>
         );
       })}
-    </>
+    </div>
   );
 };
 

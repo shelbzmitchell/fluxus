@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Profile = props => {
   if (props.profile === undefined) {
@@ -31,7 +32,13 @@ const Profile = props => {
         <div className="profile__right">
           <div className="profile__projects">
             {props.profile.projects.map(project => {
-              return <p>{project.projectname}</p>;
+              return (
+                <>
+                  <Link to={`/project/${project.id}`}>
+                    <p className="profile__project">{project.projectname}</p>
+                  </Link>
+                </>
+              );
             })}
           </div>
           <div className="profile__personalart">
