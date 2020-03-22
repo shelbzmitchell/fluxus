@@ -5,14 +5,55 @@
     "title": "Yucca Valley Sound Collection",
     "creatorfirstname": "Adrienne",
     "creatorlastname": "Mountain",
-    "collaborators": [],
+    "collaborators": [
+      { "id": "10", "firstname": "Yucca", "lastname": "Sam" },
+      { "id": "11", "firstname": "Valley", "lastname": "Tom" }
+    ],
     "description": "I'm making an animation about my desert surroundings, and want to create it starting from sounds around the area. If you have any recordings from Yucca Valley, please feel free to contribute!",
     "keywords": "animation, sound, recording",
     "private": "false",
     "city": "Yucca Valley",
     "province": "California",
     "country": "USA",
-    "onlineoption": "false"
+    "onlineoption": "false",
+    "uploads": [
+      {
+        "userid": "10",
+        "firstname": "Yucca",
+        "messagenum": "0",
+        "message": "Hi Adrienne! I picked up the sound of this rattlesnake from my camping trip last week!",
+        "image": "",
+        "video": "",
+        "audio": "audio clip"
+      },
+      {
+        "userid": "0",
+        "firstname": "Adrienne",
+        "messagenum": "1",
+        "message": "That's great, thanks Yucca Sam! If you come across any more rattle snakes let me know, I'd love to layer the sound!",
+        "image": "",
+        "video": "",
+        "audio": ""
+      },
+      {
+        "userid": "11",
+        "firstname": "Valley",
+        "messagenum": "2",
+        "message": "Hey guys, I actually have some video footage with audio of a group of rattle snakes I came across recently. Hope this helps",
+        "image": "",
+        "video": "https://www.youtube.com/watch?v=vaSeSIZ9Fgw",
+        "audio": ""
+      },
+      {
+        "userid": "0",
+        "firstname": "Adrienne",
+        "messagenum": "3",
+        "message": "Cheers, Yucca Sam and Valley Tom. Will wait for some more sounds and keep y'all updated",
+        "image": "",
+        "video": "",
+        "audio": ""
+      }
+    ]
   },
   {
     "id": "1",
@@ -82,7 +123,7 @@
     "collaborators": [],
     "description": "A collaborative poem about killing plants?",
     "keywords": "poetry, plants",
-    "private": "false",
+    "private": "true",
     "city": "Vancouver",
     "province": "BC",
     "country": "Canada",

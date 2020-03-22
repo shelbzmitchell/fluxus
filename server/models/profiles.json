@@ -3,7 +3,7 @@
     "id": "0",
     "firstname": "Adrienne",
     "lastname": "Mountain",
-    "profilephoto": "images/image.jpg",
+    "profilephoto": "images/adrienne-prof.jpg",
     "artphoto": "artphoto",
     "website": "http://adriennemountain.com/",
     "bio": "I'm an experimental animator and video artist originally from Toronto, Canada. My work often explores the metaphysical, as well as body politics and female identity.",
@@ -26,12 +26,12 @@
       {
         "title": "Lady Strips",
         "description": "A sultry strip tease with a surprise ;)",
-        "image": "image"
+        "image": "images/adrienne-personal1.png"
       },
       {
         "title": "Pillow Party",
         "description": "Live interactive projection performance and installation in collaboration with Sonia Beckwith Cole.",
-        "image": "image"
+        "image": "images/adrienne-personal2.jpg"
       }
     ]
   },
@@ -256,5 +256,89 @@
         "personalartimage": "still from movie"
       }
     ]
+  },
+  {
+    "id": "8",
+    "firstname": "Joanne",
+    "lastname": "Weaver",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "",
+    "bio": "Fabric is life",
+    "city": "Toronto",
+    "province": "ON",
+    "country": "Canada",
+    "lookingtocollaborate": "true",
+    "medium": "Sewing, Fashion",
+    "projects": [
+      {
+        "projectname": "Ontario Cottage Fabrics",
+        "id": "1"
+      }
+    ],
+    "personalart": []
+  },
+  {
+    "id": "9",
+    "firstname": "Rebecca",
+    "lastname": "Woods",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "",
+    "bio": "I love dyeing fabrics with natural materials!",
+    "city": "Toronto",
+    "province": "ON",
+    "country": "Canada",
+    "lookingtocollaborate": "true",
+    "medium": "Fabric, Dyes, Plant-based",
+    "projects": [
+      {
+        "projectname": "Ontario Cottage Fabrics",
+        "id": "1"
+      }
+    ],
+    "personalart": []
+  },
+  {
+    "id": "10",
+    "firstname": "Yucca",
+    "lastname": "Sam",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "",
+    "bio": "Nature photographer and video artist, passionate about the outdoors.",
+    "city": "Yucca Valley",
+    "province": "California",
+    "country": "USA",
+    "lookingtocollaborate": "true",
+    "medium": "Film, Photo",
+    "projects": [
+      {
+        "projectname": "Yucca Valley Sound Collection",
+        "id": "0"
+      }
+    ],
+    "personalart": []
+  },
+  {
+    "id": "11",
+    "firstname": "Valley",
+    "lastname": "Tom",
+    "profilephoto": "file:///",
+    "artphoto": "artphoto",
+    "website": "",
+    "bio": "Mural artist but looking to explore other mediums!",
+    "city": "Yucca Valley",
+    "province": "California",
+    "country": "USA",
+    "lookingtocollaborate": "true",
+    "medium": "Graffiti, Street Art, Public Art",
+    "projects": [
+      {
+        "projectname": "Yucca Valley Sound Collection",
+        "id": "0"
+      }
+    ],
+    "personalart": []
   }
 ]

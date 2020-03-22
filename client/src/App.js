@@ -10,6 +10,8 @@ import Profile from "./components/Profile";
 import Project from "./components/Project";
 import ProfileList from "./components/ProfileList";
 import ProjectList from "./components/ProjectList";
+import CreateProject from "./components/CreateProject";
+import EditProject from "./components/EditProject";
 
 export default class App extends Component {
   constructor(props) {
@@ -55,6 +57,26 @@ export default class App extends Component {
     });
   };
 
+  handleFormSubmit = event => {
+    event.preventDefault();
+
+    axios
+      .post("/api/projects/:id", {
+        userid: 0,
+        message: event.target.message.value
+      })
+      .then(response => {
+        console.log(response);
+        this.setState({
+          projects: response
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    event.target.reset();
+  };
+
   render() {
     if (this.state.doneLoading === true) {
       return (
@@ -73,7 +95,11 @@ export default class App extends Component {
               <Route
                 path="/main"
                 render={props => (
-                  <Profile {...props} profile={this.state.profile} />
+                  <Profile
+                    {...props}
+                    profile={this.state.profile}
+                    project={this.state.projects[props.match.params.id]}
+                  />
                 )}
               />
               <Route
@@ -83,6 +109,7 @@ export default class App extends Component {
                     {...props}
                     profile={this.state.profiles[props.match.params.id]}
                     profiles={this.state.profiles}
+                    project={this.state.projects[props.match.params.id]}
                   />
                 )}
               />
@@ -94,6 +121,24 @@ export default class App extends Component {
                     project={this.state.projects[props.match.params.id]}
                   />
                 )}
+                exact
+              />
+              <Route
+                path="/project/:id/edit"
+                render={props => (
+                  <>
+                    <Project
+                      project={this.state.projects[props.match.params.id]}
+                    />
+                    <EditProject
+                      {...props}
+                      project={this.state.projects[props.match.params.id]}
+                      profiles={this.state.profiles}
+                      handleFormSubmit={this.handleFormSubmit}
+                    />
+                  </>
+                )}
+                exact
               />
               <Route
                 path="/search/profiles"

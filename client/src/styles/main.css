@@ -179,6 +179,14 @@ a {
   margin: 3rem 0;
 }
 
+.profile__photo {
+  height: 200px;
+}
+
+.profile__personal-image {
+  height: 100px;
+}
+
 .profiles {
   margin: 0 1rem;
 }
