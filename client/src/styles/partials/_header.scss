@@ -1,9 +1,12 @@
 .header {
-  height: 9rem;
-  border-bottom: 1px solid black;
+  height: 8rem;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid $lightblue;
+  display: flex;
+  flex-wrap: wrap;
 
   &__logo-container {
-    width: 100%;
+    width: 50%;
     height: 50%;
     display: flex;
     align-items: center;
@@ -11,8 +14,20 @@
   }
 
   &__logo {
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__search {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__search-icon {
+    width: 2rem;
+    height: 2rem;
   }
 
   &__links {
@@ -29,55 +44,33 @@
   }
 
   &__profile-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     background-color: grey;
   }
 
-  &__search {
+  &__logout {
     width: 50%;
     display: flex;
     justify-content: center;
-  }
-
-  &__search-icon {
-    width: 2.5rem;
-    height: 2.5rem;
   }
 }
 
 @include medium {
   .header {
     display: flex;
-    border-bottom: 5px solid black;
+    width: 100%;
 
     &__logo-container {
-      width: 50%;
+      width: 60%;
       height: 100%;
       justify-content: flex-start;
       margin-left: 2rem;
     }
 
     &__logo {
-      width: 6rem;
-      height: 6rem;
-    }
-
-    &__links {
-      width: 50%;
-      height: 100%;
-      border: none;
-      justify-content: flex-end;
-    }
-
-    &__profile {
-      width: fit-content;
-      margin-right: 4rem;
-    }
-
-    &__profile-icon {
-      width: 6rem;
-      height: 6rem;
+      width: 3rem;
+      height: 3rem;
     }
 
     &__search {
@@ -86,8 +79,51 @@
     }
 
     &__search-icon {
-      width: 6rem;
-      height: 6rem;
+      width: 3rem;
+      height: 3rem;
+    }
+
+    &__links {
+      width: fit-content;
+      height: 100%;
+      border: none;
+      justify-content: flex-end;
+    }
+
+    &__profile {
+      width: fit-content;
+      margin-right: 2rem;
+    }
+
+    &__profile-icon {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+@include huge {
+  .header {
+    padding: 0 180px;
+
+    &__logo-container {
+      width: 78%;
+      margin: 0;
+    }
+
+    &__logo {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    &__search-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    &__profile-icon {
+      width: 3.5rem;
+      height: 3.5rem;
     }
   }
 }

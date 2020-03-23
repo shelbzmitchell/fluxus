@@ -1,0 +1,32 @@
+.loheader {
+  height: 8rem;
+  border-bottom: 1px solid $lightblue;
+  display: flex;
+  padding-bottom: 1.5rem;
+
+  &__logo-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__signup-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__signup {
+    @include mobile-header;
+    color: $lightblue;
+  }
+}

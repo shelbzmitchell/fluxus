@@ -22,12 +22,14 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: $lightblue;
 }
 
+@import "./partials/loheader";
 @import "./partials/header";
 @import "./partials/list-subheader";
 @import "./partials/profile";
 @import "./partials/project";
 @import "./partials/profilelist";
 @import "./partials/projectlist";
+@import "./partials/home";

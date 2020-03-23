@@ -85,11 +85,17 @@ export default class App extends Component {
             <Header
               loggedIn={this.state.loggedIn}
               logoutClick={this.logoutClick}
+              profile={this.state.profile}
             />
             <Switch>
               <Route
                 path="/"
-                render={() => <Home loginClick={this.loginClick} />}
+                render={() => (
+                  <Home
+                    loginClick={this.loginClick}
+                    loggedIn={this.state.loggedIn}
+                  />
+                )}
                 exact
               />
               <Route
