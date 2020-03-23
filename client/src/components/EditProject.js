@@ -1,5 +1,4 @@
 import React from "react";
-import Project from "../components/Project";
 
 const EditProject = props => {
   console.log(props);
@@ -18,11 +17,9 @@ const EditProject = props => {
           );
         })}
       </div>
-      <form>
+      <form onSubmit={props.handleFormSubmit}>
         <textarea name="message" placeholder="Write a message" />
-        <button type="submit" name="submit">
-          Send
-        </button>
+        <button type="submit">Send</button>
       </form>
     </>
   );

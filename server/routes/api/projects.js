@@ -70,9 +70,9 @@ router.get("/:id", (req, res) => {
 //           message: "This is a new message"
 //         };
 //         // project.uploads[0].messagenum = "4";
-//         // projects.uploads[0].message = req.body.message
-//         //         ? req.body.message
-//         //         : project.message;
+// projects.uploads[0].message = req.body.message
+//   ? req.body.message
+//   : project.message;
 //         //       // book.imageUrl = req.body.imageUrl ? req.body.imageUrl : book.imageUrl;
 //       }
 //     });
@@ -87,14 +87,8 @@ router.get("/:id", (req, res) => {
 router.post("/:id", (req, res) => {
   console.log(projects[0].uploads);
   const newMessage = {
-    message: "this is a message"
+    message: req.body.message
   };
-  // if (!newBook.title || !newBook.description || !newBook.imageUrl) {
-  //   return res.status(400).json({
-  //     errorMessage:
-  //       "Please provide title, description, and imageUrl for the book"
-  //   });
-  // }
   projects[0].uploads.push(newMessage);
   helper.writeJSONFile(projectsFile, projects);
   res.json(projects);

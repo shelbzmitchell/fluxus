@@ -3,8 +3,8 @@
     "id": "0",
     "firstname": "Adrienne",
     "lastname": "Mountain",
-    "profilephoto": "images/adrienne-prof.jpg",
-    "artphoto": "artphoto",
+    "profilephoto": "images/0-adrienne-mountain/adrienne-prof.jpg",
+    "artphoto": "images/0-adrienne-mountain/adrienne-artphoto.jpg",
     "website": "http://adriennemountain.com/",
     "bio": "I'm an experimental animator and video artist originally from Toronto, Canada. My work often explores the metaphysical, as well as body politics and female identity.",
     "city": "Yucca Valley",
@@ -26,12 +26,12 @@
       {
         "title": "Lady Strips",
         "description": "A sultry strip tease with a surprise ;)",
-        "image": "images/adrienne-personal1.png"
+        "image": "images/0-adrienne-mountain/adrienne-personal1.png"
       },
       {
         "title": "Pillow Party",
         "description": "Live interactive projection performance and installation in collaboration with Sonia Beckwith Cole.",
-        "image": "images/adrienne-personal2.jpg"
+        "image": "images/0-adrienne-mountain/adrienne-personal2.jpg"
       }
     ]
   },
@@ -39,8 +39,8 @@
     "id": "1",
     "firstname": "Mallory",
     "lastname": "Phillips",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/1-mallory-phillips/mallory-prof.jpg",
+    "artphoto": "/images/1-mallory-phillips/mallory-artphoto.jpg",
     "website": "https://birdsarentreal.com/",
     "bio": "Let's get wacky",
     "city": "Vancouver",
@@ -60,9 +60,24 @@
     ],
     "personalart": [
       {
-        "personalartlabel": "Bitches Love Patchouli",
-        "personalartdescription": "",
-        "personalartimage": "image"
+        "title": "Bitches Love Patchouli",
+        "description": "An embroidery gift for my favourite cousin",
+        "image": "/images/1-mallory-phillips/mallory-personal1.jpg"
+      },
+      {
+        "title": "Quadra",
+        "description": "An embroidery gift for my grandma",
+        "image": "/images/1-mallory-phillips/mallory-personal2.jpg"
+      },
+      {
+        "title": "Get in the fuckin van",
+        "description": "An embroidery gift for my friend",
+        "image": "/images/1-mallory-phillips/mallory-personal3.jpg"
+      },
+      {
+        "title": "Nice Ron",
+        "description": "An embroidery gift for Ron",
+        "image": "/images/1-mallory-phillips/mallory-personal4.jpg"
       }
     ]
   },
@@ -70,15 +85,15 @@
     "id": "2",
     "firstname": "Bernice",
     "lastname": "Fortenbacher",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/2-bernice-fortenbacher/bernice-prof.jpg",
+    "artphoto": "/images/2-bernice-fortenbacher/bernice-artphoto.jpg",
     "website": "http://www.zaledavis.com/",
     "bio": "I am a musician, artist, and mechanical engineer",
     "city": "Vancouver",
     "province": "BC",
     "country": "Canada",
     "lookingtocollaborate": "true",
-    "medium": "Painting, Photography, Music, Cartoons",
+    "medium": "Painting, Photography, Sound, Cartoons",
     "projects": [
       {
         "projectname": "Bob Ross Painting",
@@ -91,19 +106,19 @@
     ],
     "personalart": [
       {
-        "personalartlabel": "Zale Art 1",
-        "personalartdescription": "A thing!",
-        "personalartimage": "image"
+        "title": "New Neighbour",
+        "description": "A little forest dude. Ink and watercolor.",
+        "image": "/images/2-bernice-fortenbacher/bernice-personal1.jpg"
       },
       {
-        "personalartlabel": "Zale Art 2",
-        "personalartdescription": "Another thing",
-        "personalartimage": "image"
+        "title": "Vacationing",
+        "description": "Where all the paper planes end up",
+        "image": "/images/2-bernice-fortenbacher/bernice-personal2.jpg"
       },
       {
-        "personalartlabel": "Zale Art 3",
-        "personalartdescription": "Wow holy there's a third thing",
-        "personalartimage": "image"
+        "title": "St. Vincent",
+        "description": "Acrylic painting of my fave",
+        "image": "/images/2-bernice-fortenbacher/bernice-personal3.jpg"
       }
     ]
   },
@@ -111,8 +126,8 @@
     "id": "3",
     "firstname": "Penny",
     "lastname": "Xavier",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/3-penny-xavier/penny-prof.jpg",
+    "artphoto": "/images/3-penny-xavier/penny-artphoto.jpg",
     "website": "",
     "bio": "",
     "city": "Vancouver",
@@ -132,9 +147,19 @@
     ],
     "personalart": [
       {
-        "personalartlabel": "To My Lady",
-        "personalartdescription": "A poem about a slowly dying succulent",
-        "personalartimage": "images"
+        "title": "To My Lady 1",
+        "description": "A poem about a slowly dying succulent",
+        "image": "/images/3-penny-xavier/penny-personal1.jpg"
+      },
+      {
+        "title": "To My Lady 2",
+        "description": "A poem about a slowly dying succulent",
+        "image": "/images/3-penny-xavier/penny-personal2.jpg"
+      },
+      {
+        "title": "To My Lady 3",
+        "description": "A poem about a slowly dying succulent",
+        "image": "/images/3-penny-xavier/penny-personal3.jpg"
       }
     ]
   },
@@ -142,8 +167,8 @@
     "id": "4",
     "firstname": "Pablo",
     "lastname": "Evergritz",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/4-pablo-evergritz/pablo-prof.jpg",
+    "artphoto": "/images/4-pablo-evergritz/pablo-artphoto.jpg",
     "website": "https://joancornella.net/en/",
     "bio": "I have a new Samsung, it takes shit pics",
     "city": "Cumberland",
@@ -154,9 +179,19 @@
     "projects": [],
     "personalart": [
       {
-        "personalartlabel": "Welcome to the Farm",
-        "personalartdescription": "",
-        "personalartimage": "images"
+        "title": "Welcome to the Farm",
+        "description": "",
+        "image": "/images/4-pablo-evergritz/pablo-personal1.jpg"
+      },
+      {
+        "title": "Welcome to the Farm 2",
+        "description": "",
+        "image": "/images/4-pablo-evergritz/pablo-personal2.jpg"
+      },
+      {
+        "title": "Welcome to the Farm 3",
+        "description": "",
+        "image": "/images/4-pablo-evergritz/pablo-personal3.jpg"
       }
     ]
   },
@@ -164,8 +199,8 @@
     "id": "5",
     "firstname": "Craig",
     "lastname": "Horan",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/5-craig-horan/craig-prof.jpg",
+    "artphoto": "",
     "website": "",
     "bio": "Don't worry, be happy",
     "city": "Montreal",
@@ -181,9 +216,14 @@
     ],
     "personalart": [
       {
-        "personalartlabel": "Toiletries",
-        "personalartdescription": "A painting of some toiletries",
-        "personalartimage": "images"
+        "title": "Self-Portrait 1",
+        "description": "A collection of self portraits I've done over the years",
+        "image": "/images/5-craig-horan/craig-personal1.jpg"
+      },
+      {
+        "title": "Self-Portrait 2",
+        "description": "A collection of self portraits I've done over the years",
+        "image": "/images/5-craig-horan/craig-personal2.jpg"
       }
     ]
   },
@@ -191,8 +231,8 @@
     "id": "6",
     "firstname": "Jannik",
     "lastname": "Forsyth",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/6-jannik-forsyth/jannik-prof.jpg",
+    "artphoto": "/images/6-jannik-forsyth/jannik-artphoto.jpg",
     "website": "",
     "bio": "I don't know what I'm doing",
     "city": "Vancouver",
@@ -216,9 +256,24 @@
     ],
     "personalart": [
       {
-        "personalartlabel": "",
-        "personalartdescription": "",
-        "personalartimage": "images"
+        "title": "Miniature 1",
+        "description": "Nurgle",
+        "image": "/images/6-jannik-forsyth/jannik-personal1.jpg"
+      },
+      {
+        "title": "Miniature 2",
+        "description": "Nurgle",
+        "image": "/images/6-jannik-forsyth/jannik-personal2.jpg"
+      },
+      {
+        "title": "Miniature 3",
+        "description": "Nurgle",
+        "image": "/images/6-jannik-forsyth/jannik-personal3.jpg"
+      },
+      {
+        "title": "Miniature 4",
+        "description": "Nurgle",
+        "image": "/images/6-jannik-forsyth/jannik-personal4.jpg"
       }
     ]
   },
@@ -226,15 +281,15 @@
     "id": "7",
     "firstname": "Quentin",
     "lastname": "Lochburg",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/7-quentin-lochburg/quentin-prof.jpg",
+    "artphoto": "/images/7-quentin-lochburg/quentin-artphoto.jpg",
     "website": "",
     "bio": "Film is life",
     "city": "Vancouver",
     "province": "BC",
     "country": "Canada",
     "lookingtocollaborate": "true",
-    "medium": "Miniatures Painting, Film",
+    "medium": "Miniatures Painting, Film, Everything Else",
     "projects": [
       {
         "projectname": "Bob Ross Painting",
@@ -251,9 +306,9 @@
     ],
     "personalart": [
       {
-        "personalartlabel": "Movie",
-        "personalartdescription": "Description of movie",
-        "personalartimage": "still from movie"
+        "title": "Still from Promiseland",
+        "description": "I was a producer on this film",
+        "image": "/images/7-quentin-lochburg/quentin-personal1.jpg"
       }
     ]
   },
@@ -261,8 +316,8 @@
     "id": "8",
     "firstname": "Joanne",
     "lastname": "Weaver",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/8-joanne-weaver/joanne-prof.jpg",
+    "artphoto": "",
     "website": "",
     "bio": "Fabric is life",
     "city": "Toronto",
@@ -282,8 +337,8 @@
     "id": "9",
     "firstname": "Rebecca",
     "lastname": "Woods",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/9-rebecca-woods/rebecca-prof.jpg",
+    "artphoto": "/images/9-rebecca-woods/rebecca-artphoto.jpg",
     "website": "",
     "bio": "I love dyeing fabrics with natural materials!",
     "city": "Toronto",
@@ -303,8 +358,8 @@
     "id": "10",
     "firstname": "Yucca",
     "lastname": "Sam",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/10-yucca-sam/yucca-prof.jpg",
+    "artphoto": "/images/10-yucca-sam/yucca-artphoto.jpg",
     "website": "",
     "bio": "Nature photographer and video artist, passionate about the outdoors.",
     "city": "Yucca Valley",
@@ -324,8 +379,8 @@
     "id": "11",
     "firstname": "Valley",
     "lastname": "Tom",
-    "profilephoto": "file:///",
-    "artphoto": "artphoto",
+    "profilephoto": "/images/11-valley-tom/valley-prof.jpg",
+    "artphoto": "/images/11-valley-tom/valley-artphoto.jpg",
     "website": "",
     "bio": "Mural artist but looking to explore other mediums!",
     "city": "Yucca Valley",

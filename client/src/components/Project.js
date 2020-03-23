@@ -1,16 +1,15 @@
 import React from "react";
 
 const Project = props => {
-  console.log(props);
   return (
     <>
       <h1>{props.project.title}</h1>
       <div>{props.project.photo}</div>
-      {props.project.private === true ? (
-        <div>Request to Join</div>
-      ) : (
-        <div>Private</div>
-      )}
+      {props.project.private === true ? <div>Private</div> : <div>Public</div>}
+      {props.project.firstname !== "Adrienne" &&
+      props.project.lastname !== "Mountain" ? (
+        <button>Request to Join</button>
+      ) : null}
       {props.project.onlineoption === true ? (
         <div>Online Options</div>
       ) : (

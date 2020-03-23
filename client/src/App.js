@@ -10,7 +10,7 @@ import Profile from "./components/Profile";
 import Project from "./components/Project";
 import ProfileList from "./components/ProfileList";
 import ProjectList from "./components/ProjectList";
-import CreateProject from "./components/CreateProject";
+// import CreateProject from "./components/CreateProject";
 import EditProject from "./components/EditProject";
 
 export default class App extends Component {
@@ -30,8 +30,6 @@ export default class App extends Component {
       .all([axios.get("/api/profiles"), axios.get("/api/projects")])
 
       .then(response => {
-        console.log(response[0].data);
-
         this.setState({
           profiles: response[0].data,
           profile: response[0].data[0],
@@ -58,17 +56,19 @@ export default class App extends Component {
   };
 
   handleFormSubmit = event => {
+    console.log("hello");
     event.preventDefault();
 
     axios
       .post("/api/projects/:id", {
-        userid: 0,
+        userid: "0",
+        firstname: "Adrienne",
         message: event.target.message.value
       })
       .then(response => {
         console.log(response);
         this.setState({
-          projects: response
+          projects: response.data
         });
       })
       .catch(err => {

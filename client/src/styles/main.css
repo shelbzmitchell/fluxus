@@ -183,6 +183,10 @@ a {
   height: 200px;
 }
 
+.profile__artphoto {
+  height: 200px;
+}
+
 .profile__personal-image {
   height: 100px;
 }

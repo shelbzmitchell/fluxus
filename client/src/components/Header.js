@@ -9,7 +9,7 @@ const Header = props => {
   return (
     <section className="header">
       <div className="header__logo-container">
-        <img className="header__logo" src={logo} />
+        <img className="header__logo" src={logo} alt="Logo" />
       </div>
       {props.loggedIn ? (
         <div className="header__links">
@@ -20,7 +20,11 @@ const Header = props => {
           </div>
           <div className="header__search">
             <Link to={`/search/profiles`}>
-              <img className="header__search-icon" src={searchIcon} />
+              <img
+                className="header__search-icon"
+                src={searchIcon}
+                alt="Search"
+              />
             </Link>
           </div>
           <div className="header__logout">
