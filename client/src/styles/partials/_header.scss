@@ -1,9 +1,9 @@
 .header {
-  height: 8rem;
-  margin: 0.5rem 0;
-  border-bottom: 1px solid $lightblue;
+  height: 6rem;
+  margin: 0.5rem 0 0 0;
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 2px solid $yellowish;
 
   &__logo-container {
     width: 50%;
@@ -60,6 +60,7 @@
   .header {
     display: flex;
     width: 100%;
+    border: none;
 
     &__logo-container {
       width: 60%;

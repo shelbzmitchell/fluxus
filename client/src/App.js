@@ -34,7 +34,6 @@ export default class App extends Component {
           profiles: response[0].data,
           profile: response[0].data[0],
           projects: response[1].data,
-          loggedIn: true,
           doneLoading: true
         });
       })
@@ -56,7 +55,6 @@ export default class App extends Component {
   };
 
   handleFormSubmit = event => {
-    console.log("hello");
     event.preventDefault();
 
     axios

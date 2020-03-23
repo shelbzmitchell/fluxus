@@ -1,6 +1,5 @@
 .loheader {
   height: 8rem;
-  border-bottom: 1px solid $lightblue;
   display: flex;
   padding-bottom: 1.5rem;
 
@@ -27,6 +26,6 @@
 
   &__signup {
     @include mobile-header;
-    color: $lightblue;
+    color: $yellowish;
   }
 }

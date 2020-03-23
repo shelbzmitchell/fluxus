@@ -7,12 +7,15 @@ const ProfileList = props => {
     <div className="profiles">
       <ListSubheader />
       {props.profiles.slice(1).map(profile => {
+        console.log(profile);
         return (
           <>
             <Link className="profiles__link" to={`/profile/${profile.id}`}>
               <div className="profiles__container">
                 <div className="profiles__item-container profiles__item-container--1">
-                  <div className="profiles__pic"></div>
+                  <div className="profiles__pic-container">
+                    <img className="profiles__pic" src={profile.profilephoto} />
+                  </div>
                 </div>
 
                 <div className="profiles__item-container profiles__item-container--2">

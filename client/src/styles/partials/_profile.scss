@@ -1,14 +1,213 @@
+a {
+  color: $yellowish;
+}
+
 .profile {
-  &__project {
-    margin: 3rem 0;
+  padding: 2rem 1.5rem 0 1.5rem;
+  color: $black;
+  background-image: url(../assets/backgrounds/sky11.png),
+    url(../assets/backgrounds/sky22.png);
+  background-position-x: -600px, 0;
+  background-position-y: 275px, 800px;
+  background-size: 800px, 400px;
+  background-repeat: no-repeat, no-repeat;
+
+  &__photo-container {
+    height: 150px;
+    position: relative;
+    z-index: 732;
   }
+
   &__photo {
-    height: 200px;
+    height: 100%;
+    position: absolute;
   }
+
   &__artphoto {
-    height: 200px;
+    height: 150px;
+    position: relative;
+    bottom: 2rem;
+    left: 4rem;
   }
+
+  &__name {
+    @include mobile-header;
+    color: $yellowish;
+    margin-bottom: 1rem;
+  }
+
+  &__info {
+    @include mobile-paragraph-lists;
+    background-color: #ffffff;
+    padding: 1rem;
+  }
+
+  &__info-label {
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+  }
+
+  &__bio {
+    margin-bottom: 1rem;
+  }
+
+  &__projects-section {
+    margin: 3rem 0;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    max-height: 20rem;
+    overflow-y: scroll;
+  }
+
+  &__projects-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__projects-header {
+    @include mobile-subheader;
+    color: $yellowish;
+  }
+
+  &__new-project {
+    border: 1px solid $yellowish;
+    background-color: #ffffff;
+    color: $yellowish;
+    font-family: "archivo";
+    height: 2rem;
+    width: 6rem;
+  }
+
+  &__personalart-section {
+    padding: 0.5rem;
+    background-color: #ffffff;
+    max-height: 20rem;
+    overflow-y: scroll;
+  }
+
+  &__personal-description {
+    @include mobile-paragraph-lists;
+  }
+
   &__personal-image {
-    height: 100px;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  &__project {
+    margin: 1rem 0;
+    color: $black;
+    border-bottom: 1px solid $yellowish;
+  }
+
+  &__personalart-header {
+    margin-bottom: 1rem;
+    @include mobile-subheader;
+    color: $yellowish;
+  }
+
+  &__personalart {
+    margin: 1rem 0;
+    @include mobile-paragraph-lists;
+    border-bottom: 1px solid $yellowish;
+  }
+
+  &__personal-title {
+    @include mobile-subheader;
+  }
+}
+
+@include medium {
+  .profile {
+    padding: 3rem 6rem 0 6rem;
+    background-image: url(../assets/backgrounds/sky11.png),
+      url(../assets/backgrounds/sky22.png), url(../assets/backgrounds/sky33.png);
+    background-position-x: -400px, 150px, 0;
+    background-position-y: 300px, 800px, 1000px;
+    background-size: 900px, 700px, 700px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    &__photo-container {
+      height: 200px;
+    }
+
+    &__artphoto {
+      height: 200px;
+      bottom: 8rem;
+      left: 10rem;
+    }
+  }
+}
+
+@include huge {
+  .profile {
+    padding: 3rem 10rem 0 10rem;
+    background-image: url(../assets/backgrounds/sky11.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    &__top {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      margin-top: 4rem;
+    }
+
+    &__top-left {
+      width: 50%;
+      margin: 0 2rem 0 0;
+    }
+
+    &__top-right {
+      width: 50%;
+    }
+
+    &__photo-container {
+      height: 250px;
+    }
+
+    &__photo {
+      border: 10px solid #ffffff;
+    }
+
+    &__artphoto {
+      height: 250px;
+      overflow: hidden;
+      border: 10px solid #ffffff;
+    }
+    &__info {
+      @include dt-paragraph;
+    }
+
+    &__name {
+      @include dt-huge-header;
+    }
+    &__bottom {
+      width: 100%;
+      display: flex;
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    &__projects-section {
+      width: 50%;
+      margin-right: 2rem;
+      margin-top: 0;
+      height: fit-content;
+    }
+    &__personalart-header,
+    &__projects-header {
+      @include dt-header-h1;
+    }
+
+    &__personal-description {
+      @include dt-paragraph;
+    }
+
+    &__personalart-section {
+      width: 50%;
+    }
   }
 }

@@ -38,12 +38,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #4fa7bd;
 }
 
 .loheader {
   height: 8rem;
-  border-bottom: 1px solid #4fa7bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,23 +82,21 @@ a {
 }
 
 .loheader__signup {
-  font-size: 1.5rem;
-  /* 24px */
-  line-height: 2rem;
-  /* 32px */
+  font-size: 2.5rem;
+  line-height: 2.65rem;
   font-family: "archivo-bold";
-  color: #4fa7bd;
+  color: #e8cb56;
 }
 
 .header {
-  height: 8rem;
-  margin: 0.5rem 0;
-  border-bottom: 1px solid #4fa7bd;
+  height: 6rem;
+  margin: 0.5rem 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-bottom: 2px solid #e8cb56;
 }
 
 .header__logo-container {
@@ -183,6 +179,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    border: none;
   }
   .header__logo-container {
     width: 60%;
@@ -269,24 +266,259 @@ a {
           justify-content: center;
 }
 
-.profile__project {
-  margin: 3rem 0;
+a {
+  color: #e8cb56;
+}
+
+.profile {
+  padding: 2rem 1.5rem 0 1.5rem;
+  color: #171717;
+  background-image: url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky22.png);
+  background-position-x: -600px, 0;
+  background-position-y: 275px, 800px;
+  background-size: 800px, 400px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.profile__photo-container {
+  height: 150px;
+  position: relative;
+  z-index: 732;
 }
 
 .profile__photo {
-  height: 200px;
+  height: 100%;
+  position: absolute;
 }
 
 .profile__artphoto {
-  height: 200px;
+  height: 150px;
+  position: relative;
+  bottom: 2rem;
+  left: 4rem;
+}
+
+.profile__name {
+  font-size: 2.5rem;
+  line-height: 2.65rem;
+  font-family: "archivo-bold";
+  color: #e8cb56;
+  margin-bottom: 1rem;
+}
+
+.profile__info {
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.profile__info-label {
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.profile__bio {
+  margin-bottom: 1rem;
+}
+
+.profile__projects-section {
+  margin: 3rem 0;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+
+.profile__projects-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__projects-header {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-family: "archivo-semibold";
+  color: #e8cb56;
+}
+
+.profile__new-project {
+  border: 1px solid #e8cb56;
+  background-color: #ffffff;
+  color: #e8cb56;
+  font-family: "archivo";
+  height: 2rem;
+  width: 6rem;
+}
+
+.profile__personalart-section {
+  padding: 0.5rem;
+  background-color: #ffffff;
+  max-height: 20rem;
+  overflow-y: scroll;
+}
+
+.profile__personal-description {
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
 }
 
 .profile__personal-image {
-  height: 100px;
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+.profile__project {
+  margin: 1rem 0;
+  color: #171717;
+  border-bottom: 1px solid #e8cb56;
+}
+
+.profile__personalart-header {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-family: "archivo-semibold";
+  color: #e8cb56;
+}
+
+.profile__personalart {
+  margin: 1rem 0;
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+  border-bottom: 1px solid #e8cb56;
+}
+
+.profile__personal-title {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-family: "archivo-semibold";
+}
+
+@media only screen and (min-width: 768px) {
+  .profile {
+    padding: 3rem 6rem 0 6rem;
+    background-image: url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky22.png), url(../assets/backgrounds/sky33.png);
+    background-position-x: -400px, 150px, 0;
+    background-position-y: 300px, 800px, 1000px;
+    background-size: 900px, 700px, 700px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+  .profile__photo-container {
+    height: 200px;
+  }
+  .profile__artphoto {
+    height: 200px;
+    bottom: 8rem;
+    left: 10rem;
+  }
+  /* placeholder */
+}
+
+@media only screen and (min-width: 1440px) {
+  .profile {
+    padding: 3rem 10rem 0 10rem;
+    background-image: url(../assets/backgrounds/sky11.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+  .profile__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    margin-top: 4rem;
+  }
+  .profile__top-left {
+    width: 50%;
+    margin: 0 2rem 0 0;
+  }
+  .profile__top-right {
+    width: 50%;
+  }
+  .profile__photo-container {
+    height: 250px;
+  }
+  .profile__photo {
+    border: 10px solid #ffffff;
+  }
+  .profile__artphoto {
+    height: 250px;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+  }
+  .profile__info {
+    font-size: 1rem;
+    /* 14px */
+    line-height: 1.375rem;
+    /* 22px */
+    font-family: "archivo";
+  }
+  .profile__name {
+    font-size: 3.75rem;
+    /* 60px */
+    line-height: 4.25rem;
+    /* 68px */
+    font-family: "archivo-bold";
+  }
+  .profile__bottom {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .profile__projects-section {
+    width: 50%;
+    margin-right: 2rem;
+    margin-top: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .profile__personalart-header, .profile__projects-header {
+    font-size: 2.25rem;
+    /* 36px */
+    line-height: 2.75rem;
+    /* 44px */
+    font-family: "archivo-bold";
+  }
+  .profile__personal-description {
+    font-size: 1rem;
+    /* 14px */
+    line-height: 1.375rem;
+    /* 22px */
+    font-family: "archivo";
+  }
+  .profile__personalart-section {
+    width: 50%;
+  }
 }
 
 .profiles {
-  margin: 0 1rem;
+  padding: 0 1rem;
 }
 
 .profiles__container {
@@ -296,8 +528,10 @@ a {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 2rem 0;
-  border: 1px solid black;
+  margin: 0;
+  border-bottom: 1px solid #e8cb56;
+  padding: 0.5rem;
+  background-color: white;
 }
 
 .profiles__item-container {
@@ -323,16 +557,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.125rem;
-  /* 20px */
-  line-height: 1.375rem;
-  /* 24px */
+  font-size: 1.75rem;
+  line-height: 2rem;
   font-family: "archivo-semibold";
 }
 
 .profiles__item-container--3 {
   margin-left: 1rem;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .profiles__item-container--4 {
@@ -340,15 +573,26 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.profiles__pic {
+.profiles__pic-container {
   width: 50px;
   height: 50px;
-  background-color: grey;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.profiles__pic {
+  height: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .profiles {
-    margin: 0 1.5rem;
+    padding: 0 1.5rem;
   }
   .profiles__item-container--1 {
     width: 15%;
@@ -365,7 +609,14 @@ a {
 
 @media only screen and (min-width: 1440px) {
   .profiles {
-    margin: 0 11rem;
+    padding: 3rem 10rem;
+    background-image: url(../assets/backgrounds/sky11.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .profiles__container {
+    width: 100%;
   }
   .profiles__item-container {
     -webkit-box-align: center;
@@ -373,6 +624,13 @@ a {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 1rem;
+    /* 16px */
+    line-height: 1.5rem;
+    /* 24px */
+    font-family: "archivo-semibold";
   }
   .profiles__item-container--1 {
     padding: 0;
@@ -382,7 +640,12 @@ a {
             justify-content: center;
   }
   .profiles__item-container--2 {
-    width: 20%;
+    width: 30%;
+    font-size: 1.5rem;
+    /* 24px */
+    line-height: 2rem;
+    /* 32px */
+    font-family: "archivo-bold";
   }
   .profiles__item-container--3 {
     width: 20%;
@@ -396,7 +659,7 @@ a {
 
 .home {
   height: 100vh;
-  background-image: url(../assets/backgrounds/sky4.png), url(../assets/backgrounds/sky1.png), url(../assets/backgrounds/sky3.png);
+  background-image: url(../assets/backgrounds/sky44.png), url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky33.png);
   background-position-x: -40px, 100px, 0;
   background-position-y: 20px, 300px, 0;
   background-size: 250px, 800px, 1000px;
@@ -404,7 +667,7 @@ a {
 }
 
 .home__header {
-  color: #ffffff;
+  color: #e8cb56;
   font-size: 6rem;
 }
 
@@ -433,9 +696,9 @@ a {
 }
 
 .home__login {
-  border: 1px solid #4fa7bd;
+  border: 2px solid #e8cb56;
   background-color: #ffffff;
-  color: #4fa7bd;
+  color: #e8cb56;
   border-radius: 10px;
   font-family: "archivo";
   height: 3rem;

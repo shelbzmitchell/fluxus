@@ -1,15 +1,14 @@
 .home {
   height: 100vh;
-  background-image: url(../assets/backgrounds/sky4.png),
-    url(../assets/backgrounds/sky1.png), url(../assets/backgrounds/sky3.png);
+  background-image: url(../assets/backgrounds/sky44.png),
+    url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky33.png);
   background-position-x: -40px, 100px, 0;
   background-position-y: 20px, 300px, 0;
-
   background-size: 250px, 800px, 1000px;
   background-repeat: no-repeat, no-repeat, no-repeat;
 
   &__header {
-    color: #ffffff;
+    color: $yellowish;
     font-size: 6rem;
   }
 
@@ -28,9 +27,9 @@
   }
 
   &__login {
-    border: 1px solid $lightblue;
+    border: 2px solid $yellowish;
     background-color: #ffffff;
-    color: $lightblue;
+    color: $yellowish;
     border-radius: 10px;
     font-family: "archivo";
     height: 3rem;
@@ -42,7 +41,6 @@
   .home {
     background-position-x: -40px, 150px, 500px;
     background-position-y: 20px, 180px, 150px;
-
     background-size: 500px, 1200px, 2000px;
     background-repeat: no-repeat, no-repeat, no-repeat;
 
