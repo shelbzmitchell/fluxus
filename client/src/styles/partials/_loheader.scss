@@ -1,5 +1,5 @@
 .loheader {
-  height: 8rem;
+  height: 6rem;
   display: flex;
   padding-bottom: 1.5rem;
 
@@ -25,7 +25,7 @@
   }
 
   &__signup {
-    @include mobile-header;
+    @include mobile-subheader;
     color: $yellowish;
   }
 }

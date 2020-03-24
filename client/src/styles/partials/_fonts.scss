@@ -27,6 +27,12 @@
   font-family: "archivo-semibold";
 }
 
+@mixin mobile-subsubheader {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-family: "archivo-semibold";
+}
+
 @mixin mobile-paragraph-lists {
   font-size: 0.812rem; /* 13px */
   line-height: 1.125rem; /* 18px */

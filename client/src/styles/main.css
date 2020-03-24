@@ -41,7 +41,7 @@ a {
 }
 
 .loheader {
-  height: 8rem;
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,9 +82,9 @@ a {
 }
 
 .loheader__signup {
-  font-size: 2.5rem;
-  line-height: 2.65rem;
-  font-family: "archivo-bold";
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-family: "archivo-semibold";
   color: #e8cb56;
 }
 
@@ -437,7 +437,7 @@ a {
     background-image: url(../assets/backgrounds/sky11.png);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat;
   }
   .profile__top {
     display: -webkit-box;
@@ -517,6 +517,73 @@ a {
   }
 }
 
+.project {
+  padding: 0 1rem;
+}
+
+.project__title {
+  font-size: 2.5rem;
+  line-height: 2.65rem;
+  font-family: "archivo-bold";
+  color: #e8cb56;
+  margin-bottom: 1rem;
+}
+
+.project__settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.project__setting-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 8rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: #ffffff;
+  border: 2px solid #e8cb56;
+  border-radius: 10px;
+}
+
+.project__setting {
+  color: #e8cb56;
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+}
+
+.project__contributors {
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+  margin-bottom: 1rem;
+}
+
+.project__creator, .project__collaborators {
+  text-transform: uppercase;
+}
+
+.project__description {
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+}
+
 .profiles {
   padding: 0 1rem;
 }
@@ -532,6 +599,7 @@ a {
   border-bottom: 1px solid #e8cb56;
   padding: 0.5rem;
   background-color: white;
+  color: #171717;
 }
 
 .profiles__item-container {
@@ -576,7 +644,7 @@ a {
 .profiles__pic-container {
   width: 50px;
   height: 50px;
-  background-color: white;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

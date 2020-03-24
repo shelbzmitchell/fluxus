@@ -6,6 +6,7 @@ import searchIcon from "../assets/icons/search-icon.svg";
 import logo from "../assets/icons/logo-icon.png";
 
 const Header = props => {
+  console.log("header profile", props.profile.profilephoto);
   return (
     <>
       {props.loggedIn ? (

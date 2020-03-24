@@ -26,6 +26,12 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    if (localStorage.getItem("loggedIn") === "true") {
+      this.setState({
+        loggedIn: true
+      });
+    }
+
     axios
       .all([axios.get("/api/profiles"), axios.get("/api/projects")])
 
@@ -46,12 +52,14 @@ export default class App extends Component {
     this.setState({
       loggedIn: true
     });
+    localStorage.setItem("loggedIn", "true");
   };
 
   logoutClick = () => {
     this.setState({
       loggedIn: false
     });
+    localStorage.setItem("loggedIn", "false");
   };
 
   handleFormSubmit = event => {
@@ -123,6 +131,7 @@ export default class App extends Component {
                   <Project
                     {...props}
                     project={this.state.projects[props.match.params.id]}
+                    profile={this.state.profiles[props.match.params.id]}
                   />
                 )}
                 exact

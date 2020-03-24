@@ -87,7 +87,9 @@ router.get("/:id", (req, res) => {
 router.post("/:id", (req, res) => {
   console.log(projects[0].uploads);
   const newMessage = {
-    message: req.body.message
+    message: req.body.message,
+    firstname: "Adrienne",
+    userid: "0"
   };
   projects[0].uploads.push(newMessage);
   helper.writeJSONFile(projectsFile, projects);
