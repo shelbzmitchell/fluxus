@@ -197,12 +197,12 @@
   },
   {
     "id": "5",
-    "firstname": "Craig",
-    "lastname": "Horan",
-    "profilephoto": "/images/5-craig-horan/craig-prof.jpg",
-    "artphoto": "",
-    "website": "",
-    "bio": "Don't worry, be happy",
+    "firstname": "Priscilla",
+    "lastname": "Pringle",
+    "profilephoto": "/images/5-priscilla-pringle/priscilla-prof.jpg",
+    "artphoto": "/images/5-priscilla-pringle/priscilla-artphoto.jpg",
+    "website": "www.thepringle.com",
+    "bio": "Let's make out",
     "city": "Montreal",
     "province": "QC",
     "country": "Canada",
@@ -216,14 +216,14 @@
     ],
     "personalart": [
       {
-        "title": "Self-Portrait 1",
-        "description": "A collection of self portraits I've done over the years",
-        "image": "/images/5-craig-horan/craig-personal1.jpg"
+        "title": "Paper",
+        "description": "Charcoal/pencil drawing of paper taped to a wall",
+        "image": "/images/5-priscilla-pringle/priscilla-personal1.jpg"
       },
       {
-        "title": "Self-Portrait 2",
-        "description": "A collection of self portraits I've done over the years",
-        "image": "/images/5-craig-horan/craig-personal2.jpg"
+        "title": "Toiletries",
+        "description": "tools for groomin'",
+        "image": "/images/5-priscilla-pringle/priscilla-personal2.jpg"
       }
     ]
   },

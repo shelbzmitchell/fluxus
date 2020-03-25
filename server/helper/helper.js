@@ -16,6 +16,6 @@ const getNewId = () => {
 };
 
 module.exports = {
-  writeJSONFile
-  // getNewId
+  writeJSONFile,
+  getNewId
 };

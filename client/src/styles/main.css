@@ -266,6 +266,10 @@ a {
           justify-content: center;
 }
 
+.subheader__linkto {
+  color: #e8cb56;
+}
+
 a {
   color: #e8cb56;
 }
@@ -517,8 +521,18 @@ a {
   }
 }
 
+a {
+  color: #171717;
+}
+
 .project {
-  padding: 0 1rem;
+  padding: 2rem 1rem 0 1rem;
+  color: #171717;
+  background-image: url(../assets/backgrounds/sky11.png);
+  background-position-x: 0;
+  background-position-y: 0;
+  background-size: 1800px;
+  background-repeat: no-repeat;
 }
 
 .project__title {
@@ -546,12 +560,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 8rem;
+  width: 6rem;
   height: 2rem;
-  margin-right: 1rem;
   background-color: #ffffff;
   border: 2px solid #e8cb56;
   border-radius: 10px;
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
 }
 
 .project__setting {
@@ -570,10 +585,38 @@ a {
   /* 18px */
   font-family: "archivo";
   margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.project__join-container {
+  width: 6rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.project__join {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: #e8cb56;
+  border: none;
+  border-radius: 10px;
+}
+
+.project__contributors {
+  background-color: white;
+  padding: 1rem;
+}
+
+.project__cont-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .project__creator, .project__collaborators {
-  text-transform: uppercase;
+  width: 35%;
+  margin-bottom: 1rem;
 }
 
 .project__description {
@@ -582,6 +625,40 @@ a {
   line-height: 1.125rem;
   /* 18px */
   font-family: "archivo";
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .project {
+    padding: 3rem 1.5rem 0 1.5rem;
+    background-size: 2000px;
+  }
+  .project__top-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .project__contributors {
+    width: 45%;
+  }
+  .project__description {
+    width: 45%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  /* placeholder */
+}
+
+@media only screen and (min-width: 1440px) {
+  .project {
+    padding: 3rem 180px 0 180px;
+  }
 }
 
 .profiles {
@@ -783,5 +860,144 @@ a {
   .home__header {
     font-size: 10rem;
   }
+}
+
+.edit {
+  margin: 3rem 1rem 2rem 1rem;
+  color: #171717;
+}
+
+.edit__comments {
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: grey;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.edit__upload-header {
+  color: #e8cb56;
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-family: "archivo-semibold";
+}
+
+.edit__comment {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
+
+.edit__name {
+  margin-bottom: 0.25rem;
+}
+
+.edit__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.edit__textarea {
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+  padding: 0.3rem;
+  height: 4rem;
+  border: 2px solid #e8cb56;
+  margin-bottom: 1rem;
+}
+
+.edit__upload-label {
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.edit__upload {
+  margin-bottom: 1rem;
+}
+
+.edit__submit-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.edit__submit {
+  border: 2px solid #e8cb56;
+  background-color: #ffffff;
+  color: #e8cb56;
+  border-radius: 10px;
+  font-family: "archivo";
+  height: 2rem;
+  width: 6rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .edit {
+    margin: 3rem 180px 2rem 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .edit__comments {
+    width: 60%;
+  }
+  .edit__form {
+    width: 40%;
+  }
+  .edit__submit {
+    height: 4rem;
+    width: 8rem;
+  }
+}
+
+.create {
+  padding: 0 1rem;
+}
+
+.create__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #171717;
+}
+
+.create__label {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=main.css.map */

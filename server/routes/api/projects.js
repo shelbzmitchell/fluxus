@@ -87,18 +87,36 @@ router.get("/:id", (req, res) => {
 router.post("/:id", (req, res) => {
   console.log(projects[0].uploads);
   const newMessage = {
-    message: req.body.message,
+    userid: "0",
     firstname: "Adrienne",
-    userid: "0"
+    message: req.body.message
   };
   projects[0].uploads.push(newMessage);
   helper.writeJSONFile(projectsFile, projects);
   res.json(projects);
 });
 
-/**
- *  update book with :id
- */
+router.post("/", (req, res) => {
+  console.log(projects);
+  const newProject = {
+    id: helper.getNewId(),
+    title: req.body.title,
+    creatorfirstname: "Adrienne",
+    creatorlastname: "Mountain",
+    creatorid: "0",
+    collaborators: req.body.collaborators,
+    description: req.body.description,
+    keywords: req.body.keywords,
+    private: req.body.private,
+    city: req.body.city,
+    province: req.body.province,
+    country: req.body.country,
+    onlineoption: req.body.onlineoption
+  };
+  projects.push(newProject);
+  helper.writeJSONFile(projectsFile, projects);
+  res.json(projects);
+});
 
 // /**
 //  * Delete Book

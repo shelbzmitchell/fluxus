@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Profile = props => {
+  console.log(props);
   return (
     <section className="profile">
       <div className="profile__top">
@@ -46,7 +47,9 @@ const Profile = props => {
         <div className="profile__projects-section">
           <div className="profile__projects-top">
             <h2 className="profile__projects-header">Projects</h2>
-            <button className="profile__new-project">New Project</button>
+            <Link to={`/newproject`}>
+              <button className="profile__new-project">New Project</button>
+            </Link>
           </div>
           <div className="profile__projects">
             {props.profile.projects.map(project => {

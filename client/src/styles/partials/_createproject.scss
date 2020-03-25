@@ -1,0 +1,12 @@
+.create {
+  padding: 0 1rem;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    color: $black;
+  }
+
+  &__label {
+    margin: 1rem 0;
+  }
+}

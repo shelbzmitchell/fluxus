@@ -10,7 +10,7 @@ import Profile from "./components/Profile";
 import Project from "./components/Project";
 import ProfileList from "./components/ProfileList";
 import ProjectList from "./components/ProjectList";
-// import CreateProject from "./components/CreateProject";
+import CreateProject from "./components/CreateProject";
 import EditProject from "./components/EditProject";
 
 export default class App extends Component {
@@ -48,6 +48,7 @@ export default class App extends Component {
       });
   }
 
+  //sets state to logged in when login button on home component is clicked, stores in local storage
   loginClick = () => {
     this.setState({
       loggedIn: true
@@ -55,6 +56,7 @@ export default class App extends Component {
     localStorage.setItem("loggedIn", "true");
   };
 
+  //sets state to logged out when logout button in loheader component is clicked
   logoutClick = () => {
     this.setState({
       loggedIn: false
@@ -62,6 +64,7 @@ export default class App extends Component {
     localStorage.setItem("loggedIn", "false");
   };
 
+  //post comments to existing project
   handleFormSubmit = event => {
     event.preventDefault();
 
@@ -70,6 +73,38 @@ export default class App extends Component {
         userid: "0",
         firstname: "Adrienne",
         message: event.target.message.value
+      })
+      .then(response => {
+        console.log(response);
+        this.setState({
+          projects: response.data
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    event.target.reset();
+  };
+
+  //create new project and post to projects.json
+  handleCreateFormSubmit = event => {
+    console.log("hello event");
+    event.preventDefault();
+
+    axios
+      .post("/api/projects", {
+        title: event.target.title.value,
+        creatorfirstname: "Adrienne",
+        creatorlastname: "Mountain",
+        creatorid: "0",
+        collaborators: [],
+        description: event.target.description.value,
+        keywords: event.target.keywords.value,
+        private: event.target.private.value,
+        city: event.target.city.value,
+        province: event.target.province.value,
+        country: event.target.country.value,
+        onlineoption: event.target.online.value
       })
       .then(response => {
         console.log(response);
@@ -131,7 +166,6 @@ export default class App extends Component {
                   <Project
                     {...props}
                     project={this.state.projects[props.match.params.id]}
-                    profile={this.state.profiles[props.match.params.id]}
                   />
                 )}
                 exact
@@ -163,6 +197,16 @@ export default class App extends Component {
                 path="/search/projects"
                 render={props => (
                   <ProjectList {...props} projects={this.state.projects} />
+                )}
+              />
+              <Route
+                path="/newproject"
+                render={props => (
+                  <CreateProject
+                    {...props}
+                    projects={this.state.projects}
+                    handleCreateFormSubmit={this.handleCreateFormSubmit}
+                  />
                 )}
               />
             </Switch>

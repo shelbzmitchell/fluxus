@@ -3,25 +3,55 @@ import React from "react";
 const EditProject = props => {
   console.log(props);
   return (
-    <>
+    <div className="edit">
+      <h3 className="edit__upload-header">Conversation</h3>
       <div className="edit__comments">
         {props.project.uploads.map(upload => {
           return (
-            <>
-              <h4>{upload.firstname}</h4>
-              <p>{upload.message}</p>
-              <div>{upload.image}</div>
-              <div>{upload.video}</div>
-              <div>{upload.audio}</div>
-            </>
+            <div className="edit__comment">
+              <h4 className="edit__name">{upload.firstname}</h4>
+              <p className="edit__message">{upload.message}</p>
+              <div className="edit__image">{upload.image}</div>
+              <div className="edit__video">{upload.video}</div>
+            </div>
           );
         })}
       </div>
-      <form onSubmit={props.handleFormSubmit}>
-        <textarea name="message" placeholder="Write a message" />
-        <button type="submit">Send</button>
+      <form className="edit__form" onSubmit={props.handleFormSubmit}>
+        <textarea
+          className="edit__textarea"
+          name="message"
+          placeholder="Write a message"
+        />
+        <label className="edit__upload-label" for="image">
+          Upload an Image
+          <input
+            className="edit__upload"
+            id="image"
+            type="file"
+            accept=".jpg,.jpeg,.png,.tiff,.pdg,.bmp"
+            name="image"
+            placeholder="Uploade an Image"
+          />
+        </label>
+        <label className="edit__upload-label" for="image">
+          Upload a Video
+          <input
+            className="edit__upload"
+            id="video"
+            type="file"
+            accept=".mp4,.png,.mpg,.mpeg,.mpe,.mpv,.avi,.wmv,.mov,.flv,.avchd"
+            name="image"
+            placeholder="Upload an Image"
+          />
+        </label>
+        <div className="edit__submit-container">
+          <button className="edit__submit" type="submit">
+            Send
+          </button>
+        </div>
       </form>
-    </>
+    </div>
   );
 };
 

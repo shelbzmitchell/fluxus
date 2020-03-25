@@ -10,8 +10,7 @@ const ProjectList = props => {
         if (project.private === "false") {
           return (
             <>
-              {project.firstname === "Adrienne" &&
-              project.lastname === "Mountain" ? (
+              {project.creatorid === "0" ? (
                 <Link
                   className="projects__link"
                   to={`/project/${project.id}/edit`}
@@ -19,9 +18,9 @@ const ProjectList = props => {
                   <div className="projects">
                     <div className="projects__pic"></div>
                     <p>{project.title}</p>
-                    <p className="profiles__name">{`${project.firstname} ${project.lastname}`}</p>
-                    <p className="profiles__location">{`${project.city}, ${project.country}`}</p>
-                    <p className="profiles__medium">{project.keywords}</p>
+                    <p className="projects__name">{`${project.firstname} ${project.lastname}`}</p>
+                    <p className="projects__location">{`${project.city}, ${project.country}`}</p>
+                    <p className="projects__medium">{project.keywords}</p>
                   </div>
                 </Link>
               ) : (
@@ -29,9 +28,9 @@ const ProjectList = props => {
                   <div className="projects">
                     <div className="projects__pic"></div>
                     <p>{project.title}</p>
-                    <p className="profiles__name">{`${project.firstname} ${project.lastname}`}</p>
-                    <p className="profiles__location">{`${project.city}, ${project.country}`}</p>
-                    <p className="profiles__medium">{project.keywords}</p>
+                    <p className="projects__name">{`${project.firstname} ${project.lastname}`}</p>
+                    <p className="projects__location">{`${project.city}, ${project.country}`}</p>
+                    <p className="projects__medium">{project.keywords}</p>
                   </div>
                 </Link>
               )}
