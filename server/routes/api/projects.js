@@ -11,6 +11,7 @@ router.get("/", (req, res) => {
       title: project.title,
       firstname: project.creatorfirstname,
       lastname: project.creatorlastname,
+      creatorid: project.creatorid,
       collaborators: project.collaborators,
       description: project.description,
       keywords: project.keywords,
