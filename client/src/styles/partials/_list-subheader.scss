@@ -3,13 +3,18 @@
   display: flex;
 
   &__container {
-    margin-top: 1.5rem;
+    margin: 1rem 0;
     width: 50%;
     display: flex;
     justify-content: center;
   }
 
   &__linkto {
-    color: $yellowish;
+    color: $black;
+    border-bottom: 3px solid $yellowish;
+  }
+
+  &__link {
+    @include mobile-subsubheader;
   }
 }

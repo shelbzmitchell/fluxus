@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import mail from "../assets/icons/mail-icon.svg";
 
 const Profile = props => {
-  console.log(props);
+  let profileId = props.match.params.id;
+
   return (
     <section className="profile">
       <div className="profile__top">
@@ -30,6 +32,9 @@ const Profile = props => {
               <h1 className="profile__name">
                 {props.profile.firstname} {props.profile.lastname}
               </h1>
+              {props.profile.id !== "0" ? (
+                <img src={mail} alt="Send Message" />
+              ) : null}
             </div>
             <div className="profile__bio">{props.profile.bio}</div>
             <h4 className="profile__info-label">website</h4>
@@ -52,17 +57,20 @@ const Profile = props => {
             </Link>
           </div>
           <div className="profile__projects">
-            {props.profile.projects.map(project => {
-              if (project.id === "0" || project.id === "1") {
+            {props.projects.map((project, index) => {
+              if (project.creatorid === "0" && props.match.path === "/main") {
                 return (
-                  <Link to={`/project/${project.id}/edit`}>
-                    <p className="profile__project">{project.projectname}</p>
+                  <Link key={index} to={`/project/${project.id}/edit`}>
+                    <p className="profile__project">{project.title}</p>
                   </Link>
                 );
-              } else {
+              } else if (
+                project.creatorid === String(profileId) &&
+                project.creatorid !== "0"
+              ) {
                 return (
                   <Link to={`/project/${project.id}`}>
-                    <p className="profile__project">{project.projectname}</p>
+                    <p className="profile__project">{project.title}</p>
                   </Link>
                 );
               }
@@ -71,9 +79,9 @@ const Profile = props => {
         </div>
         <div className="profile__personalart-section">
           <h2 className="profile__personalart-header">Personal Art</h2>
-          {props.profile.personalart.map(personal => {
+          {props.profile.personalart.map((personal, index) => {
             return (
-              <div className="profile__personalart">
+              <div key={index} className="profile__personalart">
                 <h4 className="profile__personal-title">{personal.title}</h4>
                 <p className="profile__personal-description">
                   {personal.description}

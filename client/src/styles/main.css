@@ -41,11 +41,11 @@ a {
 }
 
 .loheader {
-  height: 6rem;
+  height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .loheader__logo-container {
@@ -63,8 +63,8 @@ a {
 }
 
 .loheader__logo {
-  width: 4rem;
-  height: 4rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .loheader__signup-container {
@@ -82,14 +82,14 @@ a {
 }
 
 .loheader__signup {
-  font-size: 1.75rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
   font-family: "archivo-semibold";
   color: #e8cb56;
 }
 
 .header {
-  height: 6rem;
+  height: 4rem;
   margin: 0.5rem 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,8 +100,8 @@ a {
 }
 
 .header__logo-container {
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +119,7 @@ a {
 }
 
 .header__search {
-  width: 50%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,8 +137,8 @@ a {
 }
 
 .header__links {
-  width: 100%;
-  height: 50%;
+  width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,6 +171,14 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.header__logout-text {
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
 }
 
 @media only screen and (min-width: 768px) {
@@ -256,7 +264,7 @@ a {
 }
 
 .subheader__container {
-  margin-top: 1.5rem;
+  margin: 1rem 0;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,7 +275,14 @@ a {
 }
 
 .subheader__linkto {
-  color: #e8cb56;
+  color: #171717;
+  border-bottom: 3px solid #e8cb56;
+}
+
+.subheader__link {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-family: "archivo-semibold";
 }
 
 a {
@@ -275,7 +290,7 @@ a {
 }
 
 .profile {
-  padding: 2rem 1.5rem 0 1.5rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   color: #171717;
   background-image: url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky22.png);
   background-position-x: -600px, 0;
@@ -293,6 +308,8 @@ a {
 .profile__photo {
   height: 100%;
   position: absolute;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__artphoto {
@@ -300,6 +317,8 @@ a {
   position: relative;
   bottom: 2rem;
   left: 4rem;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__name {
@@ -318,6 +337,8 @@ a {
   font-family: "archivo";
   background-color: #ffffff;
   padding: 1rem;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__info-label {
@@ -335,6 +356,8 @@ a {
   background-color: #ffffff;
   max-height: 20rem;
   overflow-y: scroll;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__projects-top {
@@ -370,6 +393,8 @@ a {
   background-color: #ffffff;
   max-height: 20rem;
   overflow-y: scroll;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__personal-description {
@@ -606,6 +631,8 @@ a {
 .project__contributors {
   background-color: white;
   padding: 1rem;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .project__cont-container {
@@ -627,6 +654,8 @@ a {
   font-family: "archivo";
   background-color: #ffffff;
   padding: 1rem;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 @media only screen and (min-width: 768px) {
@@ -702,8 +731,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.75rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
   font-family: "archivo-semibold";
 }
 
@@ -711,11 +740,21 @@ a {
   margin-left: 1rem;
   margin-bottom: 0.5rem;
   width: 100%;
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
 }
 
 .profiles__item-container--4 {
   margin-left: 1rem;
   margin-bottom: 0.5rem;
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
 }
 
 .profiles__pic-container {
@@ -802,6 +841,54 @@ a {
   }
 }
 
+.projects {
+  margin: 0 1rem;
+}
+
+.projects__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects__project {
+  padding: 1rem 0;
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+  border-bottom: 1px solid #e8cb56;
+}
+
+.projects__title {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-family: "archivo-semibold";
+  margin-bottom: 0.5rem;
+}
+
+.projects__name-loc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects__name {
+  font-family: "archivo-bold";
+  margin-right: 0.5rem;
+}
+
+.projects__medium {
+  font-style: italic;
+}
+
 .home {
   height: 100vh;
   background-image: url(../assets/backgrounds/sky44.png), url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky33.png);
@@ -875,9 +962,11 @@ a {
   font-family: "archivo";
   margin-bottom: 2rem;
   padding: 1rem;
-  background-color: grey;
+  background-color: #ffffff;
   max-height: 400px;
   overflow-y: scroll;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .edit__upload-header {
@@ -893,6 +982,7 @@ a {
   padding-bottom: 1rem;
   padding: 0.5rem;
   background-color: #ffffff;
+  border: 1px solid #171717;
 }
 
 .edit__name {
@@ -984,6 +1074,31 @@ a {
 
 .create {
   padding: 0 1rem;
+  padding-bottom: 2rem;
+  color: #171717;
+  background-image: url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky22.png);
+  background-position-x: 0, 0;
+  background-position-y: 0, 500px;
+  background-size: 800px, 400px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.create__header-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.create__header {
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+  line-height: 2.65rem;
+  font-family: "archivo-bold";
+  color: #e8cb56;
 }
 
 .create__form {
@@ -995,9 +1110,62 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #171717;
+  background-color: #ffffff;
+  padding: 1rem;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+}
+
+.create__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.create__private, .create__online {
+  margin-left: 0.5rem;
 }
 
 .create__label {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-family: "archivo-semibold";
+}
+
+.create__input {
+  width: 100%;
+  font-size: 0.812rem;
+  /* 13px */
+  line-height: 1.125rem;
+  /* 18px */
+  font-family: "archivo";
+  border: 1px solid #e8cb56;
+  min-height: 2rem;
+  padding: 0.25rem;
+}
+
+.create__submit-container {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.create__submit {
+  border: 2px solid #e8cb56;
+  background-color: #ffffff;
+  color: #e8cb56;
+  border-radius: 10px;
+  font-family: "archivo";
+  height: 2rem;
+  width: 6rem;
 }
 /*# sourceMappingURL=main.css.map */

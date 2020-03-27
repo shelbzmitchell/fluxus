@@ -6,9 +6,10 @@
     @include mobile-paragraph-lists;
     margin-bottom: 2rem;
     padding: 1rem;
-    background-color: grey;
+    background-color: $white;
     max-height: 400px;
     overflow-y: scroll;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
   }
 
   &__upload-header {
@@ -22,6 +23,7 @@
     padding-bottom: 1rem;
     padding: 0.5rem;
     background-color: $white;
+    border: 1px solid $black;
   }
 
   &__name {

@@ -23,7 +23,7 @@ const EditProject = props => {
           name="message"
           placeholder="Write a message"
         />
-        <label className="edit__upload-label" for="image">
+        <label className="edit__upload-label">
           Upload an Image
           <input
             className="edit__upload"
@@ -34,7 +34,7 @@ const EditProject = props => {
             placeholder="Uploade an Image"
           />
         </label>
-        <label className="edit__upload-label" for="image">
+        <label className="edit__upload-label">
           Upload a Video
           <input
             className="edit__upload"

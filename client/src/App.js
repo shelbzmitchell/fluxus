@@ -64,7 +64,7 @@ export default class App extends Component {
     localStorage.setItem("loggedIn", "false");
   };
 
-  //post comments to existing project
+  //post comments to existing project, as main user
   handleFormSubmit = event => {
     event.preventDefault();
 
@@ -88,23 +88,24 @@ export default class App extends Component {
 
   //create new project and post to projects.json
   handleCreateFormSubmit = event => {
-    console.log("hello event");
+    console.log(this.state);
     event.preventDefault();
 
     axios
       .post("/api/projects", {
         title: event.target.title.value,
-        creatorfirstname: "Adrienne",
-        creatorlastname: "Mountain",
+        firstname: "Adrienne",
+        lastname: "Mountain",
         creatorid: "0",
-        collaborators: [],
+        collaborators: event.target.collaborators.value,
         description: event.target.description.value,
         keywords: event.target.keywords.value,
-        private: event.target.private.value,
+        private: event.target.private.checked,
         city: event.target.city.value,
         province: event.target.province.value,
         country: event.target.country.value,
-        onlineoption: event.target.online.value
+        onlineoption: event.target.private.checked,
+        uploads: []
       })
       .then(response => {
         console.log(response);
@@ -145,7 +146,7 @@ export default class App extends Component {
                   <Profile
                     {...props}
                     profile={this.state.profile}
-                    project={this.state.projects[props.match.params.id]}
+                    projects={this.state.projects}
                   />
                 )}
               />
@@ -156,7 +157,8 @@ export default class App extends Component {
                     {...props}
                     profile={this.state.profiles[props.match.params.id]}
                     profiles={this.state.profiles}
-                    project={this.state.projects[props.match.params.id]}
+                    // project={this.state.projects[props.match.params.id]}
+                    projects={this.state.projects}
                   />
                 )}
               />
@@ -166,6 +168,8 @@ export default class App extends Component {
                   <Project
                     {...props}
                     project={this.state.projects[props.match.params.id]}
+                    profile={this.state.profiles[props.match.params.id]}
+                    profiles={this.state.profiles}
                   />
                 )}
                 exact

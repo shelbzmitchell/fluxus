@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Project = props => {
-  console.log(props.project);
+  console.log("project", props);
   return (
     <div className="project">
       <h1 className="project__title">{props.project.title}</h1>
@@ -47,7 +47,7 @@ const Project = props => {
           <div className="project__cont-container">
             <h4 className="project__collaborators">Collaborators:</h4>
             <div className="project__collab-container">
-              {props.project.collaborators.map(collaborator => {
+              {JSON.parse(props.project.collaborators).map(collaborator => {
                 return (
                   <Link
                     className="profiles__link"

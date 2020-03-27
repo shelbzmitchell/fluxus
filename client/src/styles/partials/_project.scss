@@ -63,6 +63,7 @@ a {
   &__contributors {
     background-color: white;
     padding: 1rem;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
   }
 
   &__cont-container {
@@ -79,6 +80,7 @@ a {
     @include mobile-paragraph-lists;
     background-color: $white;
     padding: 1rem;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
   }
 }
 

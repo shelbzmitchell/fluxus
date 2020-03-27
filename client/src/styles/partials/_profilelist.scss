@@ -22,16 +22,18 @@
     &--2 {
       width: 70%;
       align-items: center;
-      @include mobile-subheader;
+      @include mobile-subsubheader;
     }
     &--3 {
       margin-left: 1rem;
       margin-bottom: 0.5rem;
       width: 100%;
+      @include mobile-paragraph-lists;
     }
     &--4 {
       margin-left: 1rem;
       margin-bottom: 0.5rem;
+      @include mobile-paragraph-lists;
     }
   }
   &__pic-container {

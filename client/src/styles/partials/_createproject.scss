@@ -1,12 +1,71 @@
 .create {
   padding: 0 1rem;
+  padding-bottom: 2rem;
+  color: $black;
+  background-image: url(../assets/backgrounds/sky11.png),
+    url(../assets/backgrounds/sky22.png);
+  background-position-x: 0, 0;
+  background-position-y: 0, 500px;
+  background-size: 800px, 400px;
+  background-repeat: no-repeat, no-repeat;
+
+  &__header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__header {
+    margin: 1.5rem 0;
+    @include mobile-header;
+    color: $yellowish;
+  }
   &__form {
     display: flex;
     flex-direction: column;
     color: $black;
+    background-color: $white;
+    padding: 1rem;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__private,
+  &__online {
+    margin-left: 0.5rem;
   }
 
   &__label {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    @include mobile-subsubheader;
+  }
+
+  &__input {
+    width: 100%;
+    @include mobile-paragraph-lists;
+    border: 1px solid $yellowish;
+    min-height: 2rem;
+    padding: 0.25rem;
+  }
+
+  &__submit-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__submit {
+    border: 2px solid $yellowish;
+    background-color: $white;
+    color: $yellowish;
+    border-radius: 10px;
+    font-family: "archivo";
+    height: 2rem;
+    width: 6rem;
   }
 }

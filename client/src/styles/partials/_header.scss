@@ -1,13 +1,13 @@
 .header {
-  height: 6rem;
+  height: 4rem;
   margin: 0.5rem 0 0 0;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 2px solid $yellowish;
 
   &__logo-container {
-    width: 50%;
-    height: 50%;
+    width: 25%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,7 @@
   }
 
   &__search {
-    width: 50%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,8 +31,8 @@
   }
 
   &__links {
-    width: 100%;
-    height: 50%;
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
   }
@@ -53,6 +53,10 @@
     width: 50%;
     display: flex;
     justify-content: center;
+  }
+
+  &__logout-text {
+    @include mobile-paragraph-lists;
   }
 }
 

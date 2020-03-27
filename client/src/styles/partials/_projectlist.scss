@@ -1,0 +1,32 @@
+.projects {
+  margin: 0 1rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__project {
+    padding: 1rem 0;
+    @include mobile-paragraph-lists;
+    border-bottom: 1px solid $yellowish;
+  }
+
+  &__title {
+    @include mobile-subsubheader;
+    margin-bottom: 0.5rem;
+  }
+
+  &__name-loc {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    font-family: "archivo-bold";
+    margin-right: 0.5rem;
+  }
+
+  &__medium {
+    font-style: italic;
+  }
+}

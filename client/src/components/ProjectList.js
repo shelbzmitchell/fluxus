@@ -6,38 +6,46 @@ const ProjectList = props => {
   return (
     <div className="projects">
       <ListSubheader />
-      {props.projects.map(project => {
-        if (project.private === "false") {
-          return (
-            <>
-              {project.creatorid === "0" ? (
-                <Link
-                  className="projects__link"
-                  to={`/project/${project.id}/edit`}
-                >
-                  <div className="projects">
-                    <div className="projects__pic"></div>
-                    <p>{project.title}</p>
-                    <p className="projects__name">{`${project.firstname} ${project.lastname}`}</p>
-                    <p className="projects__location">{`${project.city}, ${project.country}`}</p>
-                    <p className="projects__medium">{project.keywords}</p>
-                  </div>
-                </Link>
-              ) : (
-                <Link className="projects__link" to={`/project/${project.id}`}>
-                  <div className="projects">
-                    <div className="projects__pic"></div>
-                    <p>{project.title}</p>
-                    <p className="projects__name">{`${project.firstname} ${project.lastname}`}</p>
-                    <p className="projects__location">{`${project.city}, ${project.country}`}</p>
-                    <p className="projects__medium">{project.keywords}</p>
-                  </div>
-                </Link>
-              )}
-            </>
-          );
-        }
-      })}
+      <div className="projects__container">
+        {props.projects
+          .filter(project => project.private === "false")
+          .map((project, index) => {
+            return (
+              <div key={index}>
+                {project.creatorid === "0" ? (
+                  <Link
+                    className="projects__link"
+                    to={`/project/${project.id}/edit`}
+                  >
+                    <div className="projects__project">
+                      <p className="projects__title">{project.title}</p>
+                      <div className="projects__name-loc">
+                        <p className="projects__name">{`${project.firstname} ${project.lastname}`}</p>
+                        <p className="projects__location">{`${project.city}, ${project.country}`}</p>
+                      </div>
+                      <p className="projects__medium">{project.keywords}</p>
+                    </div>
+                  </Link>
+                ) : (
+                  <Link
+                    className="projects__link"
+                    to={`/project/${project.id}`}
+                  >
+                    <div className="projects__project">
+                      <div className="projects__pic"></div>
+                      <p className="projects__title">{project.title}</p>
+                      <div className="projects__name-loc">
+                        <p className="projects__name">{`${project.firstname} ${project.lastname}`}</p>
+                        <p className="projects__location">{`${project.city}, ${project.country}`}</p>
+                      </div>
+                      <p className="projects__medium">{project.keywords}</p>
+                    </div>
+                  </Link>
+                )}
+              </div>
+            );
+          })}
+      </div>
     </div>
   );
 };
