@@ -1,14 +1,15 @@
 import React from "react";
 
+//this component renders as the lower half of the projects, page, if you're involved in the project
 const EditProject = props => {
-  console.log(props);
   return (
     <div className="edit">
       <h3 className="edit__upload-header">Conversation</h3>
       <div className="edit__comments">
-        {props.project.uploads.map(upload => {
+        {/* map through uploads object to get existing messages */}
+        {props.project.uploads.map((upload, index) => {
           return (
-            <div className="edit__comment">
+            <div key={index} className="edit__comment">
               <h4 className="edit__name">{upload.firstname}</h4>
               <p className="edit__message">{upload.message}</p>
               <div className="edit__image">{upload.image}</div>
@@ -17,6 +18,7 @@ const EditProject = props => {
           );
         })}
       </div>
+      {/* on submit, form posts to conversation. can send messages but video/image function isnt working */}
       <form className="edit__form" onSubmit={props.handleFormSubmit}>
         <textarea
           className="edit__textarea"
@@ -31,7 +33,7 @@ const EditProject = props => {
             type="file"
             accept=".jpg,.jpeg,.png,.tiff,.pdg,.bmp"
             name="image"
-            placeholder="Uploade an Image"
+            placeholder="Upload an Image"
           />
         </label>
         <label className="edit__upload-label">
@@ -47,7 +49,7 @@ const EditProject = props => {
         </label>
         <div className="edit__submit-container">
           <button className="edit__submit" type="submit">
-            Send
+            <p className="edit__submit-text">Send</p>
           </button>
         </div>
       </form>

@@ -1,0 +1,2209 @@
+(this["webpackJsonpfluxus"] = this["webpackJsonpfluxus"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/styles/main.css":
+/*!********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/styles/main.css ***!
+  \********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../assets/fonts/Archivo/Archivo-Regular.ttf */ "./src/assets/fonts/Archivo/Archivo-Regular.ttf");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../assets/fonts/Archivo/Archivo-Bold.ttf */ "./src/assets/fonts/Archivo/Archivo-Bold.ttf");
+var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! ../assets/fonts/Archivo/Archivo-SemiBold.ttf */ "./src/assets/fonts/Archivo/Archivo-SemiBold.ttf");
+var ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(/*! ../assets/backgrounds/sky11.png */ "./src/assets/backgrounds/sky11.png");
+var ___CSS_LOADER_URL_IMPORT_4___ = __webpack_require__(/*! ../assets/backgrounds/sky22.png */ "./src/assets/backgrounds/sky22.png");
+var ___CSS_LOADER_URL_IMPORT_5___ = __webpack_require__(/*! ../assets/backgrounds/sky33.png */ "./src/assets/backgrounds/sky33.png");
+var ___CSS_LOADER_URL_IMPORT_6___ = __webpack_require__(/*! ../assets/backgrounds/sky44.png */ "./src/assets/backgrounds/sky44.png");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_3___);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_4___);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_5___);
+var ___CSS_LOADER_URL_REPLACEMENT_6___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_6___);
+// Module
+exports.push([module.i, "@font-face {\n  font-family: archivo;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n\n@font-face {\n  font-family: archivo-bold;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n}\n\n@font-face {\n  font-family: archivo-semibold;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n}\n\n/* Mobile (small) fonts */\n/* Desktop and tablet (medium and huge) fonts */\nhtml,\nbody {\n  margin: 0;\n  font-family: \"archivo\", sans-serif;\n  height: 100vh;\n  box-sizing: border-box;\n  font-size: 16px;\n  overflow-x: hidden;\n  /*to avoid horizontal scroll */\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: inherit;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  text-decoration: none;\n}\n\n.loheader {\n  height: 4rem;\n  display: flex;\n  padding-bottom: 1rem;\n}\n\n.loheader__logo-container {\n  width: 50%;\n  height: 100%;\n  display: flex;\n  align-items: flex-end;\n  justify-content: center;\n}\n\n.loheader__logo {\n  width: 2rem;\n  height: 2rem;\n}\n\n.loheader__signup-container {\n  width: 50%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: flex-end;\n}\n\n.loheader__signup {\n  font-size: 1.2rem;\n  line-height: 1.4rem;\n  font-family: \"archivo-semibold\";\n  color: #e8cb56;\n}\n\n@media only screen and (min-width: 1440px) {\n  .loheader {\n    margin-top: 2rem;\n  }\n  .loheader__logo {\n    width: 4rem;\n    height: 4rem;\n  }\n  .loheader__signup {\n    font-size: 1.75rem;\n    line-height: 2rem;\n    font-family: \"archivo-semibold\";\n  }\n}\n\n.header {\n  height: 4rem;\n  margin: 0.5rem 0 0 0;\n  display: flex;\n  flex-wrap: wrap;\n  border-bottom: 2px solid #e8cb56;\n}\n\n.header__logo-container {\n  width: 25%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.header__logo {\n  width: 2rem;\n  height: 2rem;\n}\n\n.header__search {\n  width: 25%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.header__search-icon {\n  width: 2rem;\n  height: 2rem;\n}\n\n.header__links {\n  width: 50%;\n  height: 100%;\n  display: flex;\n  align-items: center;\n}\n\n.header__profile {\n  width: 50%;\n  display: flex;\n  justify-content: center;\n}\n\n.header__profile-icon {\n  width: 2rem;\n  height: 2rem;\n  background-color: grey;\n}\n\n.header__logout {\n  width: 50%;\n  display: flex;\n  justify-content: center;\n}\n\n.header__logout-text {\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n}\n\n@media only screen and (min-width: 768px) {\n  .header {\n    display: flex;\n    width: 100%;\n    border: none;\n  }\n  .header__logo-container {\n    width: 60%;\n    height: 100%;\n    justify-content: flex-start;\n    margin-left: 2rem;\n  }\n  .header__logo {\n    width: 3rem;\n    height: 3rem;\n  }\n  .header__search {\n    width: -moz-fit-content;\n    width: fit-content;\n    margin-right: 2rem;\n  }\n  .header__search-icon {\n    width: 3rem;\n    height: 3rem;\n  }\n  .header__links {\n    width: -moz-fit-content;\n    width: fit-content;\n    height: 100%;\n    border: none;\n    justify-content: flex-end;\n  }\n  .header__profile {\n    width: -moz-fit-content;\n    width: fit-content;\n    margin-right: 2rem;\n  }\n  .header__profile-icon {\n    width: 3rem;\n    height: 3rem;\n  }\n  /* placeholder */\n}\n\n@media only screen and (min-width: 1440px) {\n  .header {\n    padding: 0 180px;\n  }\n  .header__logo-container {\n    width: 78%;\n    margin: 0;\n  }\n  .header__logo {\n    width: 3.5rem;\n    height: 3.5rem;\n  }\n  .header__search-icon {\n    width: 3.5rem;\n    height: 3.5rem;\n  }\n  .header__profile-icon {\n    width: 3.5rem;\n    height: 3.5rem;\n  }\n  .header__logout-text {\n    font-size: 1rem;\n    /* 14px */\n    line-height: 1.375rem;\n    /* 22px */\n    font-family: \"archivo\";\n  }\n}\n\n.subheader {\n  width: 100%;\n  display: flex;\n}\n\n.subheader__container {\n  margin: 1rem 0;\n  width: 50%;\n  display: flex;\n  justify-content: center;\n}\n\n.subheader__linkto {\n  color: #171717;\n  border-bottom: 3px solid #e8cb56;\n}\n\n.subheader__link {\n  font-size: 1.2rem;\n  line-height: 1.4rem;\n  font-family: \"archivo-semibold\";\n}\n\n@media only screen and (min-width: 768px) {\n  .subheader__link {\n    font-size: 1.75rem;\n    line-height: 2rem;\n    font-family: \"archivo-semibold\";\n  }\n  /* placeholder */\n}\n\na {\n  color: #e8cb56;\n}\n\n.profile {\n  padding: 2rem 1.5rem 2rem 1.5rem;\n  color: #171717;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n  background-position-x: -600px, 0;\n  background-position-y: 275px, 800px;\n  background-size: 800px, 400px;\n  background-repeat: no-repeat, no-repeat;\n}\n\n.profile__photo-container {\n  height: 150px;\n  position: relative;\n  z-index: 732;\n}\n\n.profile__photo {\n  height: 100%;\n  position: absolute;\n  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);\n}\n\n.profile__artphoto {\n  height: 150px;\n  position: relative;\n  bottom: 2rem;\n  left: 4rem;\n  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);\n}\n\n.profile__name {\n  font-size: 2.5rem;\n  line-height: 2.65rem;\n  font-family: \"archivo-bold\";\n  color: #e8cb56;\n  margin-bottom: 1rem;\n}\n\n.profile__info {\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n  background-color: #ffffff;\n  padding: 1rem;\n  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);\n}\n\n.profile__info-label {\n  text-transform: uppercase;\n  margin-top: 0.5rem;\n}\n\n.profile__bio {\n  margin-bottom: 1rem;\n}\n\n.profile__projects-section {\n  margin: 3rem 0;\n  padding: 0.5rem;\n  background-color: #ffffff;\n  max-height: 20rem;\n  overflow-y: scroll;\n  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);\n}\n\n.profile__projects-top {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}\n\n.profile__projects-header {\n  font-size: 1.75rem;\n  line-height: 2rem;\n  font-family: \"archivo-semibold\";\n  color: #e8cb56;\n}\n\n.profile__new-project {\n  border: 1px solid #e8cb56;\n  background-color: #ffffff;\n  color: #e8cb56;\n  font-family: \"archivo\";\n  height: 2rem;\n  width: 6rem;\n}\n\n.profile__personalart-section {\n  padding: 0.5rem;\n  background-color: #ffffff;\n  max-height: 20rem;\n  overflow-y: scroll;\n  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);\n}\n\n.profile__personal-description {\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n}\n\n.profile__personal-image {\n  max-width: 100%;\n  margin: 1rem 0;\n}\n\n.profile__project {\n  margin: 1rem 0;\n  color: #171717;\n  border-bottom: 1px solid #e8cb56;\n}\n\n.profile__personalart-header {\n  margin-bottom: 1rem;\n  font-size: 1.75rem;\n  line-height: 2rem;\n  font-family: \"archivo-semibold\";\n  color: #e8cb56;\n}\n\n.profile__personalart {\n  margin: 1rem 0;\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n  border-bottom: 1px solid #e8cb56;\n}\n\n.profile__personal-title {\n  font-size: 1.75rem;\n  line-height: 2rem;\n  font-family: \"archivo-semibold\";\n}\n\n@media only screen and (min-width: 768px) {\n  .profile {\n    padding: 3rem 6rem 0 6rem;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n    background-position-x: -400px, 150px, 0;\n    background-position-y: 300px, 800px, 1000px;\n    background-size: 900px, 700px, 700px;\n    background-repeat: no-repeat, no-repeat, no-repeat;\n  }\n  .profile__photo-container {\n    height: 200px;\n  }\n  .profile__artphoto {\n    height: 200px;\n    bottom: 8rem;\n    left: 10rem;\n  }\n  /* placeholder */\n}\n\n@media only screen and (min-width: 1440px) {\n  .profile {\n    padding: 3rem 10rem 0 10rem;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n    background-position: center;\n    background-size: cover;\n    background-repeat: no-repeat;\n  }\n  .profile__top {\n    display: flex;\n    flex-direction: row-reverse;\n    width: 100%;\n    margin-top: 4rem;\n  }\n  .profile__top-left {\n    width: 50%;\n    margin: 0 2rem 0 0;\n  }\n  .profile__top-right {\n    width: 50%;\n  }\n  .profile__photo-container {\n    height: 250px;\n  }\n  .profile__photo {\n    border: 10px solid #ffffff;\n  }\n  .profile__artphoto {\n    height: 250px;\n    overflow: hidden;\n    border: 10px solid #ffffff;\n  }\n  .profile__info {\n    font-size: 1rem;\n    /* 14px */\n    line-height: 1.375rem;\n    /* 22px */\n    font-family: \"archivo\";\n  }\n  .profile__name {\n    font-size: 3.75rem;\n    /* 60px */\n    line-height: 4.25rem;\n    /* 68px */\n    font-family: \"archivo-bold\";\n  }\n  .profile__bottom {\n    width: 100%;\n    display: flex;\n    margin-top: 2rem;\n    padding-bottom: 2rem;\n  }\n  .profile__projects-section {\n    width: 50%;\n    margin-right: 2rem;\n    margin-top: 0;\n    height: -moz-fit-content;\n    height: fit-content;\n  }\n  .profile__personalart-header, .profile__projects-header {\n    font-size: 2.25rem;\n    /* 36px */\n    line-height: 2.75rem;\n    /* 44px */\n    font-family: \"archivo-bold\";\n  }\n  .profile__personal-description {\n    font-size: 1rem;\n    /* 14px */\n    line-height: 1.375rem;\n    /* 22px */\n    font-family: \"archivo\";\n  }\n  .profile__personalart-section {\n    width: 50%;\n  }\n}\n\na {\n  color: #171717;\n}\n\n.project {\n  padding: 2rem 1rem 0 1rem;\n  color: #171717;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n  background-position-x: 0;\n  background-position-y: 0;\n  background-size: 1800px;\n  background-repeat: no-repeat;\n}\n\n.project__title {\n  font-size: 2.5rem;\n  line-height: 2.65rem;\n  font-family: \"archivo-bold\";\n  color: #e8cb56;\n  margin-bottom: 1rem;\n}\n\n.project__settings {\n  display: flex;\n  margin-bottom: 1rem;\n}\n\n.project__setting-container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 6rem;\n  height: 2rem;\n  background-color: #ffffff;\n  border: 2px solid #e8cb56;\n  border-radius: 10px;\n  margin-bottom: 2rem;\n  margin-right: 0.5rem;\n}\n\n.project__setting {\n  color: #e8cb56;\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n}\n\n.project__contributors {\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n  margin-bottom: 1rem;\n  line-height: 1.5rem;\n}\n\n.project__join-container {\n  width: 6rem;\n  height: 2rem;\n  margin-right: 0.5rem;\n}\n\n.project__join {\n  width: 100%;\n  height: 100%;\n  color: #ffffff;\n  background-color: #e8cb56;\n  border: none;\n  border-radius: 10px;\n}\n\n.project__contributors {\n  background-color: white;\n  padding: 1rem;\n  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);\n}\n\n.project__cont-container {\n  display: flex;\n}\n\n.project__creator, .project__collaborators {\n  width: 35%;\n  margin-bottom: 1rem;\n}\n\n.project__description {\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n  background-color: #ffffff;\n  padding: 1rem;\n  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);\n}\n\n@media only screen and (min-width: 768px) {\n  .project {\n    padding: 3rem 1.5rem 0 1.5rem;\n    background-size: 2000px;\n  }\n  .project__top-info {\n    display: flex;\n    width: 100%;\n    justify-content: space-evenly;\n  }\n  .project__contributors {\n    width: 45%;\n  }\n  .project__description {\n    width: 45%;\n    height: -moz-fit-content;\n    height: fit-content;\n  }\n  /* placeholder */\n}\n\n@media only screen and (min-width: 1440px) {\n  .project {\n    padding: 3rem 180px 0 180px;\n  }\n}\n\n.profiles {\n  padding: 0 1rem;\n}\n\n.profiles__container {\n  display: flex;\n  width: 100%;\n  flex-wrap: wrap;\n  margin: 0;\n  border-bottom: 1px solid #e8cb56;\n  padding: 0.5rem;\n  background-color: white;\n  color: #171717;\n}\n\n.profiles__item-container {\n  display: flex;\n}\n\n.profiles__item-container--1 {\n  width: 30%;\n  height: 5rem;\n  display: flex;\n  align-items: center;\n  padding-left: 1rem;\n}\n\n.profiles__item-container--2 {\n  width: 70%;\n  align-items: center;\n  font-size: 1.2rem;\n  line-height: 1.4rem;\n  font-family: \"archivo-semibold\";\n}\n\n.profiles__item-container--3 {\n  margin-left: 1rem;\n  margin-bottom: 0.5rem;\n  width: 100%;\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n}\n\n.profiles__item-container--4 {\n  margin-left: 1rem;\n  margin-bottom: 0.5rem;\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n}\n\n.profiles__pic-container {\n  width: 50px;\n  height: 50px;\n  background-color: #ffffff;\n  display: flex;\n  justify-content: center;\n  overflow: hidden;\n}\n\n.profiles__pic {\n  height: 100%;\n}\n\n@media only screen and (min-width: 768px) {\n  .profiles {\n    padding: 0 1.5rem;\n  }\n  .profiles__item-container--1 {\n    width: 15%;\n  }\n  .profiles__item-container--3 {\n    width: 100%;\n    margin-left: 15%;\n  }\n  .profiles__item-container--4 {\n    margin-left: 15%;\n  }\n  /* placeholder */\n}\n\n@media only screen and (min-width: 1440px) {\n  .profiles {\n    padding: 3rem 10rem;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n    background-position: center;\n    background-size: cover;\n    background-repeat: no-repeat;\n  }\n  .profiles__container {\n    width: 100%;\n  }\n  .profiles__item-container {\n    align-items: center;\n    flex-wrap: nowrap;\n    background-color: #ffffff;\n    width: 100%;\n    font-size: 1rem;\n    /* 16px */\n    line-height: 1.5rem;\n    /* 24px */\n    font-family: \"archivo-semibold\";\n  }\n  .profiles__item-container--1 {\n    padding: 0;\n    width: 10%;\n    justify-content: center;\n  }\n  .profiles__item-container--2 {\n    width: 30%;\n    font-size: 1.5rem;\n    /* 24px */\n    line-height: 2rem;\n    /* 32px */\n    font-family: \"archivo-bold\";\n  }\n  .profiles__item-container--3 {\n    width: 20%;\n    margin: 0;\n  }\n  .profiles__item-container--4 {\n    width: 40%;\n    margin: 0;\n  }\n}\n\n.projects {\n  margin: 0 1rem;\n}\n\n.projects__container {\n  display: flex;\n  flex-direction: column;\n}\n\n.projects__project {\n  padding: 1rem 0;\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n  border-bottom: 1px solid #e8cb56;\n}\n\n.projects__title {\n  font-size: 1.2rem;\n  line-height: 1.4rem;\n  font-family: \"archivo-semibold\";\n  margin-bottom: 0.5rem;\n}\n\n.projects__name-loc {\n  display: flex;\n  flex-wrap: wrap;\n}\n\n.projects__name {\n  font-family: \"archivo-bold\";\n  margin-right: 0.5rem;\n}\n\n.projects__medium {\n  font-style: italic;\n}\n\n@media only screen and (min-width: 1440px) {\n  .projects {\n    padding: 3rem 10rem;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n    background-position: center;\n    background-size: cover;\n    background-repeat: repeat-y;\n  }\n}\n\n.home {\n  height: 100vh;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n  background-position-x: -40px, 100px, 0;\n  background-position-y: 20px, 300px, 0;\n  background-size: 250px, 800px, 1000px;\n  background-repeat: no-repeat, no-repeat, no-repeat;\n}\n\n.home__header {\n  color: #e8cb56;\n  font-size: 6rem;\n}\n\n.home__header-container {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  height: 50vh;\n  align-items: flex-end;\n}\n\n.home__login-container {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n}\n\n.home__login {\n  border: 2px solid #e8cb56;\n  background-color: #ffffff;\n  color: #e8cb56;\n  border-radius: 10px;\n  font-family: \"archivo\";\n  height: 3rem;\n  width: 6rem;\n}\n\n@media only screen and (min-width: 768px) {\n  .home {\n    height: 100vh;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n    background-position-x: -40px, 100px, 0, 0;\n    background-position-y: 20px, 300px, 0, 600px;\n    background-size: 250px, 800px, 1000px, 800px;\n    background-repeat: no-repeat, no-repeat, no-repeat;\n  }\n  /* placeholder */\n}\n\n@media only screen and (min-width: 1440px) {\n  .home {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ");\n    background-position-x: -40px, 150px, 500px;\n    background-position-y: 20px, 180px, 150px;\n    background-size: 500px, 1600px, 2000px;\n    background-repeat: no-repeat, no-repeat, no-repeat;\n  }\n  .home__header {\n    font-size: 10rem;\n  }\n  .home__login {\n    height: 5rem;\n    width: 10rem;\n    margin-top: 2rem;\n  }\n  .home__login-text {\n    font-size: 1.5rem;\n  }\n}\n\n.edit {\n  margin: 2rem 1rem 2rem 1rem;\n  color: #171717;\n}\n\n.edit__comments {\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n  margin-bottom: 2rem;\n  padding: 1rem;\n  background-color: #ffffff;\n  max-height: 400px;\n  overflow-y: scroll;\n  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);\n}\n\n.edit__upload-header {\n  color: #e8cb56;\n  margin-bottom: 0.25rem;\n  font-size: 1.2rem;\n  line-height: 1.4rem;\n  font-family: \"archivo-semibold\";\n}\n\n.edit__comment {\n  margin-bottom: 1.5rem;\n  padding-bottom: 1rem;\n  padding: 0.5rem;\n  background-color: #ffffff;\n  border: 1px solid #171717;\n}\n\n.edit__name {\n  margin-bottom: 0.25rem;\n}\n\n.edit__form {\n  display: flex;\n  width: 100%;\n  flex-direction: column;\n}\n\n.edit__textarea {\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n  padding: 0.3rem;\n  height: 4rem;\n  border: 2px solid #e8cb56;\n  margin-bottom: 1rem;\n}\n\n.edit__upload-label {\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n  text-transform: uppercase;\n  margin-bottom: 0.25rem;\n}\n\n.edit__upload {\n  margin-bottom: 1rem;\n}\n\n.edit__submit-container {\n  display: flex;\n  justify-content: center;\n  width: 100%;\n}\n\n.edit__submit {\n  border: 2px solid #e8cb56;\n  background-color: #ffffff;\n  color: #e8cb56;\n  border-radius: 10px;\n  font-family: \"archivo\";\n  height: 2rem;\n  width: 6rem;\n}\n\n@media only screen and (min-width: 1440px) {\n  .edit {\n    margin: 5rem 180px 2rem 180px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n  .edit__comments {\n    width: 60%;\n  }\n  .edit__form {\n    width: 40%;\n  }\n  .edit__submit {\n    height: 3rem;\n    width: 7rem;\n  }\n  .edit__submit-text {\n    font-size: 1.2rem;\n    line-height: 1.4rem;\n    font-family: \"archivo-semibold\";\n  }\n}\n\n.create {\n  padding: 0 1rem;\n  padding-bottom: 2rem;\n  color: #171717;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + "), url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n  background-position-x: 0, 0;\n  background-position-y: 0, 500px;\n  background-size: 800px, 400px;\n  background-repeat: no-repeat, no-repeat;\n}\n\n.create__header-container {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n}\n\n.create__header {\n  margin: 1.5rem 0;\n  font-size: 2.5rem;\n  line-height: 2.65rem;\n  font-family: \"archivo-bold\";\n  color: #e8cb56;\n}\n\n.create__form {\n  display: flex;\n  flex-direction: column;\n  color: #171717;\n  background-color: #ffffff;\n  padding: 1rem;\n  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);\n}\n\n.create__checkbox {\n  display: flex;\n  justify-content: space-between;\n}\n\n.create__private, .create__online {\n  margin-left: 0.5rem;\n}\n\n.create__label {\n  margin: 0.5rem 0;\n  font-size: 1.2rem;\n  line-height: 1.4rem;\n  font-family: \"archivo-semibold\";\n}\n\n.create__input {\n  width: 100%;\n  font-size: 0.812rem;\n  /* 13px */\n  line-height: 1.125rem;\n  /* 18px */\n  font-family: \"archivo\";\n  border: 1px solid #e8cb56;\n  min-height: 2rem;\n  padding: 0.25rem;\n}\n\n.create__submit-container {\n  margin-top: 1rem;\n  display: flex;\n  justify-content: center;\n  width: 100%;\n}\n\n.create__submit {\n  border: 2px solid #e8cb56;\n  background-color: #ffffff;\n  color: #e8cb56;\n  border-radius: 10px;\n  font-family: \"archivo\";\n  height: 2rem;\n  width: 6rem;\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return App; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _src_styles_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/styles/main.css */ "./src/styles/main.css");
+/* harmony import */ var _src_styles_main_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_src_styles_main_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Header */ "./src/components/Header.js");
+/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Home */ "./src/components/Home.js");
+/* harmony import */ var _components_Profile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Profile */ "./src/components/Profile.js");
+/* harmony import */ var _components_Project__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Project */ "./src/components/Project.js");
+/* harmony import */ var _components_ProfileList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/ProfileList */ "./src/components/ProfileList.js");
+/* harmony import */ var _components_ProjectList__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/ProjectList */ "./src/components/ProjectList.js");
+/* harmony import */ var _components_CreateProject__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/CreateProject */ "./src/components/CreateProject.js");
+/* harmony import */ var _components_EditProject__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/EditProject */ "./src/components/EditProject.js");
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\App.js";
+
+
+
+ //import components
+
+
+
+
+
+
+
+
+
+class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+
+    this.loginClick = () => {
+      this.setState({
+        loggedIn: true
+      });
+      localStorage.setItem("loggedIn", "true");
+    };
+
+    this.logoutClick = () => {
+      this.setState({
+        loggedIn: false
+      });
+      localStorage.setItem("loggedIn", "false");
+    };
+
+    this.handleFormSubmit = event => {
+      event.preventDefault();
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/api/projects/:id", {
+        userid: "0",
+        firstname: "Adrienne",
+        message: event.target.message.value
+      }).then(response => {
+        console.log(response);
+        this.setState({
+          projects: response.data
+        });
+      }).catch(err => {
+        console.log(err);
+      });
+      event.target.reset();
+    };
+
+    this.handleCreateFormSubmit = event => {
+      event.preventDefault();
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/api/projects", {
+        title: event.target.title.value,
+        firstname: "Adrienne",
+        lastname: "Mountain",
+        creatorid: "0",
+        collaborators: event.target.collaborators.value,
+        description: event.target.description.value,
+        keywords: event.target.keywords.value,
+        private: event.target.private.checked,
+        city: event.target.city.value,
+        province: event.target.province.value,
+        country: event.target.country.value,
+        onlineoption: event.target.private.checked,
+        uploads: []
+      }).then(response => {
+        this.setState({
+          projects: response.data
+        });
+      }).catch(err => {
+        console.log(err);
+      });
+      event.target.reset();
+    };
+
+    this.state = {
+      profile: {},
+      profiles: [],
+      projects: [],
+      loggedIn: false,
+      doneLoading: false
+    };
+  }
+
+  componentDidMount() {
+    if (localStorage.getItem("loggedIn") === "true") {
+      this.setState({
+        loggedIn: true
+      });
+    }
+
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.all([axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("/api/profiles"), axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("/api/projects")]).then(response => {
+      this.setState({
+        profiles: response[0].data,
+        profile: response[0].data[0],
+        projects: response[1].data,
+        doneLoading: true
+      });
+    }).catch(err => {
+      console.log(err);
+    });
+  } //sets state to logged in when login button on home component is clicked, stores in local storage
+
+
+  render() {
+    if (this.state.doneLoading === true) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 124
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        loggedIn: this.state.loggedIn,
+        logoutClick: this.logoutClick,
+        profile: this.state.profile,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 125
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 130
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/",
+        render: () => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Home__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          loginClick: this.loginClick,
+          loggedIn: this.state.loggedIn,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 134
+          },
+          __self: this
+        }),
+        exact: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 131
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/main",
+        render: props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Profile__WEBPACK_IMPORTED_MODULE_6__["default"], Object.assign({}, props, {
+          profile: this.state.profile,
+          projects: this.state.projects,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 144
+          },
+          __self: this
+        })),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 141
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/profile/:id",
+        render: props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Profile__WEBPACK_IMPORTED_MODULE_6__["default"], Object.assign({}, props, {
+          profile: this.state.profiles[props.match.params.id],
+          profiles: this.state.profiles // project={this.state.projects[props.match.params.id]}
+          ,
+          projects: this.state.projects,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 154
+          },
+          __self: this
+        })),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 151
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/project/:id",
+        render: props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({}, props, {
+          project: this.state.projects[props.match.params.id],
+          profile: this.state.profiles[props.match.params.id],
+          profiles: this.state.profiles,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 166
+          },
+          __self: this
+        })),
+        exact: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 163
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/project/:id/edit",
+        render: props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Project__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          project: this.state.projects[props.match.params.id],
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 179
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_EditProject__WEBPACK_IMPORTED_MODULE_11__["default"], Object.assign({}, props, {
+          project: this.state.projects[props.match.params.id],
+          profiles: this.state.profiles,
+          handleFormSubmit: this.handleFormSubmit,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 182
+          },
+          __self: this
+        }))),
+        exact: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 175
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/search/profiles",
+        render: props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ProfileList__WEBPACK_IMPORTED_MODULE_8__["default"], Object.assign({}, props, {
+          profiles: this.state.profiles,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 195
+          },
+          __self: this
+        })),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 192
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/search/projects",
+        render: props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ProjectList__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({}, props, {
+          projects: this.state.projects,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 201
+          },
+          __self: this
+        })),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 198
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/newproject",
+        render: props => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CreateProject__WEBPACK_IMPORTED_MODULE_10__["default"], Object.assign({}, props, {
+          projects: this.state.projects,
+          handleCreateFormSubmit: this.handleCreateFormSubmit,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 207
+          },
+          __self: this
+        })),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 204
+        },
+        __self: this
+      }))));
+    } else {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 219
+        },
+        __self: this
+      }, "Loading...");
+    }
+  }
+
+}
+
+/***/ }),
+
+/***/ "./src/assets/backgrounds/sky11.png":
+/*!******************************************!*\
+  !*** ./src/assets/backgrounds/sky11.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/sky11.393ea6b9.png";
+
+/***/ }),
+
+/***/ "./src/assets/backgrounds/sky22.png":
+/*!******************************************!*\
+  !*** ./src/assets/backgrounds/sky22.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/sky22.adec5325.png";
+
+/***/ }),
+
+/***/ "./src/assets/backgrounds/sky33.png":
+/*!******************************************!*\
+  !*** ./src/assets/backgrounds/sky33.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/sky33.7e0aa91c.png";
+
+/***/ }),
+
+/***/ "./src/assets/backgrounds/sky44.png":
+/*!******************************************!*\
+  !*** ./src/assets/backgrounds/sky44.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/sky44.8e6d4a1e.png";
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Archivo/Archivo-Bold.ttf":
+/*!***************************************************!*\
+  !*** ./src/assets/fonts/Archivo/Archivo-Bold.ttf ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/Archivo-Bold.a19cddcf.ttf";
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Archivo/Archivo-Regular.ttf":
+/*!******************************************************!*\
+  !*** ./src/assets/fonts/Archivo/Archivo-Regular.ttf ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/Archivo-Regular.4b36aaa8.ttf";
+
+/***/ }),
+
+/***/ "./src/assets/fonts/Archivo/Archivo-SemiBold.ttf":
+/*!*******************************************************!*\
+  !*** ./src/assets/fonts/Archivo/Archivo-SemiBold.ttf ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/Archivo-SemiBold.1ff14aaf.ttf";
+
+/***/ }),
+
+/***/ "./src/assets/icons/logo-icon.png":
+/*!****************************************!*\
+  !*** ./src/assets/icons/logo-icon.png ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX///8BAAIAAABTU1O9vb3Y2Njt7e35+fm5ubn8/PxHR0fe3t6ZmZnS0tLDw8OFhYZqamv19fWRkZHm5uagoKCvr696enpeXl4/Pz/q6uqpqalubm7KysoyMjJra2tNTU0qKiqAgIBBQUEZGRmTk5MQEBAfHyA5OTkMDA1aWlqcnJwuLi4lJSYZGBn1CjOmAAAKnUlEQVR4nO1dZ5uiMBDWUOygFFHRZXWxu///7x3oKikTQYWQ3MP77e5GnfdSJlMyabUaNGjQoEGDBg0aNGjQoEEDVaGH2rRbtxIVwlyhFPtJ3YpUhQ5C7RRo26lblYpg3wgmFJ26VakI6MEQ8YV0DR2CkTilysT8wbCNljwh7bpSkS1SsdJgYgx5DIKbDEKeUNXKwi5juIIlRvf/BIR6YnUrB17GEMEGY51JKGk1B9g0hfeSYyYQCFauHGzzhijERlmwbuUgygjEoID/EGijgWDlSsE0Y7gGBSZI8YU4zPSfwhL9TELJc88pl6GTSYRidSsH+WOYLUTUF6tbOVjnrcPWMpO4iNWtHGB76RCWGGQSW7G6lYJe/k6ZHQpQW6xypWCEWTsDFjHUHkPMHCKOl9/NRM5ilSsDuDmPODKYtTgKVa4UfGGT9MSR6efuthJDRxhDF5bBnWRfrHqfw8UJchzgVpy/F0kLnCDXVnSQut7TiCC440iF2BB+CdXvY5xwgm2kw1JdfCJbYjX8DO6MJMg5Uxs4QZUm6Twk+CXKz0E5ciJzzq0SwhgjmiBsBhYEQd6ZRzroM4ofLxg8OZITeSFa0/fg72h6ie5jSHJBjfNetKpvoXsA+IEE/d9iK1UuzCOWX6I6G7wwY3oiIyXCbB6z/tpgvmUUsAtVhShbRwP5belQvtEH/iN4QSqZYP5C/BjNTdqQ3OQU8JoGkN5oQ/sKnIkMh/ulggsR/KGPouYM4JcIKnAcnbA7B5oxm6MF84tUqEPZ0Fs/CllfdgFOUDXceoey3cgGhmUIrlRbicS2QR4vUWACQizBdKeFJCXEniQIurpd5gyDtp4KCzCFTrhAfVBteq9FSFNgA70DH0JeSHdFrVTGUMqMAU5Qg2Vich7/KjR+LTLc+QOLmKQrr1qi9xsLd3KK79YEQSUMIAY8Js8p+MFSiLytVmbo+TF5vGBGuREkChE4qxDLcyvhB9LAarY42uMpRJVivncEmfqcaKCFDaEiAUMCWHqTE0vC5rEyMV8cm1yGYe5mKze03ATuLJNQsswZW4ecPH1b8dJDrJoEjN1j9xGeVOvLjEWm/wGWUJ3hMvdMs1N8luLnUtjkR4rvNJhzyzF3Ye5KlRxYzRZciH7KXamSA/PxYYb4qU3N21vn7HYaGIXCV6piBTN/eMTaeOGJldq+RQu7e8aJf8YYQ1VCpBTWt5u+vAC2q/wYtlpzz7afRAgf/oeazkUB3BMbHHPyP8BPU7+qZNLeg5Fe9e2LDuV3JhPTdN2BMVpaejeFv/C8YezYGBwnHnrewr/+u24tR8bAdU1zMnk57+dWnSnszRMqln9y7DDo71fnyy/6DD+X1WoWBVM79vyUeB2pwJ7pjnTfs7+0M0/N9nvgfds+CJ1F1zLmFZu9iWF5drjZlcHlXd6HSzR1FstBycE1d+k7wUwwrzyu/fHQNz6vypssT+GlZlogHkRX08XozQHtjbxgJyE3Anea4eJVmz+IZ5Jzw3FT9egVnrOufVGH3R1XjfeFyjD0jXLs7kgVH+cdcKyLouz+kHCMni1JEyo3VgwIKo9+DKD6/FIgtONc2IOK/NQEgsPkXtkEeYdW+OxZ8k8DFJfv/sozvbe7y2q/6UdaEATj8dc4Q/IXgRb1Z/vz5efpV7yrFGM3mHLcV2j9nmfHcO04Q8/Xl6PU1zNfdvR6k3nqU46W3cUpdpz1l7b/3r5PFs3oHxgX+Dz+a7sonN48GnNSXRa9M0k8Navr2dPxpv0aV7p6YfD0Q49v/u5/xQurhCP9W+i5RkI22PwUYUpHGLlD+PdV5zDWR6YsJQ+d+bJrB4fnNMn4FLgKb59fjT2LY17qRmfQdY5bHkvy0prOiqSfG3vv+l4CYVpOBJFECA/x2Iih9x0rFGbtLacsRyL5HSGKYKBSOfEN3TNd9I3fW9sikqCaGceYulyJJ78p8mrVS2cISYZ405M2+U+q5gGmJA38rj49S5UsUEn2S5IGXuG/o3caTb0yI/+b3mnwrOI3ay3Q1JLfFt5h+uwdYHKnmcEWPxou5U+Qz3X7DB5riGhGAB7ubp5REHfLThOUBNPwbY1/NiXs4ZR7Sv873f4c1541kOVSX8fQ42n/kONfEIWp9KkNppn47P3A9rrLwbyOQZ24o67nhNq+oJ9IGD3vuSzDNP3y2dd66OvWaPBG4rYgEgfYWFr6wpkGZKqymLb4yQzwLYoyvXn8q00UhOv4dA1jGMbAnb/o+XfMNIhhJA79whs607HWn52ZdPJLSpLlcKMXP/ycL4nt7juNRqWItGD8FRy16PqnTRqFOjz/8AdqtYmiTbOaUGkO93KI8H8cnyO9/yYYnIG6lrn6DxmS6YvwP2RIekgFzYVCoAP7H22mUoBtoUEeqRXfapLt+HCkfCe6AxbgXaiC1NxoOn3yZDqd5ZxMZcXVmmp+OiFp/5cONlnKMbydFc72n6NOZQfZ9FpHoYX4dxBaBSfMQafsHdAyUlOGIdqdFvpoTjo0dOYFaAe5UIch1OBqSBEESr8rOnyXDwS2RqaHELrEv1GFIdTq0aftPdRrT5WDG3jbcEtPUiizpMg0BW8A0aODvgGC+PNBMgO6Tsn2dYNvlb4YrKkHYOaPDoaS6V8MBwUoQvPPYIaQdw9qqAJDoMkHHaDgZ3hfrIuqA9A9PGZguK32VYhlAIcxtj/mk/Qn0ExTLkAX15kg2tP7lkWq2+oEcFRhHdunDQiel7fVDmAI2aLRnAcd5R5EdhUCB7GcOgupVyIwOmwkO/flI36utH6wC4ydcvmt6SS2iexzJMARpcAjctI6UYhptKMDi7DIozl05YksYHqYjvLqL3iAPigBmEcOoE2xYOc2OTcb2lJADnvRDphS5jDox+FMyNUr3D3i7csl1YGODoIhlxe6C67lY0geSOERfKUu9iwZRWqOzsFJ9tJbD5Id3qggMPAkRJsbX+OhKxdD4jANbxMvP5kj01Ikt0i60fyfzOutBfvSUEQ/uEsBvIVwFXr96bEe8MBLLSAXYcgh+E4/M0l2G8IGTMD3VjjZmnzIcUDFpx8T+r3L/LxZ7wp4J8KBpyl4N5W5Qfx81H+7G3NoOwGX4Ae3B0u/3/0i0PdjG+Uelgs5vXzEtVLEcoXTighyzY8QZNNvCbwOeJf5+J5dfRP14TF1OEYQl/kEfk0UH9PP55dJf7TJZKinIch9+hkcI3+V+S2pmxvP0FaJv+nn8kzEVWRW2kWP+U40xdv0m3N30KtIqb11j2KH8ersDcJn9xRQ2Q8ZOyIpon2nZWlP72G84Q/mQWAADgUT7zeHH7f37geAX4qsguAeaB9AEazogdG1KIp51+6qe9xJilAxQlGFPU0749o5oqofBlpua/Y2jtU3pRVqN2h+Yp5Xc2vqzJfwo2+JVAboMXcBBCORvY7AZ6Kr5bcS3Mii44jkiNClhmYkE1Eck5/5qanZihiOyfyssZlMp+r1mHz9rO6OR3qVSSo5WnK5lTKsm12KKmtS5Xi7Ec6ql8TwIEXDmCoZRvk/LwBfFTKU4wnV6qapHBtNi3rivFSC0vRUexa4/YSgRI3x/MKdaF7ASgJjn6Gn22OtTISxmv03GzRo0KBBgwYNGjRo0KCB1PgHRmysYN00B/IAAAAASUVORK5CYII="
+
+/***/ }),
+
+/***/ "./src/assets/icons/mail-icon.svg":
+/*!****************************************!*\
+  !*** ./src/assets/icons/mail-icon.svg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/mail-icon.b25e5056.svg";
+
+/***/ }),
+
+/***/ "./src/assets/icons/search-icon.svg":
+/*!******************************************!*\
+  !*** ./src/assets/icons/search-icon.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/search-icon.d378117f.svg";
+
+/***/ }),
+
+/***/ "./src/components/CreateProject.js":
+/*!*****************************************!*\
+  !*** ./src/components/CreateProject.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CreateProject; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_multi_select_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-multi-select-component */ "./node_modules/react-multi-select-component/dist/index.es.js");
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\CreateProject.js";
+
+ //values for multiselect dropdown for collaborators
+
+const options = [{
+  id: "80",
+  label: "Joanne Weaver",
+  value: "Joanne Weaver",
+  firstname: "Joanne",
+  lastname: "Weaver"
+}, {
+  id: "81",
+  label: "Rebecca Woods",
+  value: "Rebecca Woods",
+  firstname: "Rebecca",
+  lastname: "Woods"
+}, {
+  id: "82",
+  label: "Yucca Sam",
+  value: "Yucca Sam",
+  firstname: "Yucca",
+  lastname: "Sam"
+}, {
+  id: "83",
+  label: "Valley Tom",
+  value: "Valley Tom",
+  firstname: "Valley",
+  lastname: "Tom"
+}];
+class CreateProject extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+
+    this.handleInputChange = event => {
+      const target = event.target;
+
+      if (target.name === "online") {
+        this.setState({
+          online: target.checked
+        });
+      } else if (target.name === "private") {
+        this.setState({
+          private: target.checked
+        });
+      }
+    };
+
+    this.state = {
+      private: false,
+      online: false,
+      selected: []
+    };
+  } //state change for private and online setting checkboxes
+
+
+  render() {
+    const {
+      selected
+    } = this.state;
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "create",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 64
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "create__header-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      className: "create__header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }, "New Project")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      className: "create__form",
+      onSubmit: this.props.handleCreateFormSubmit //pass new project submit event to app.js
+      ,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 68
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      className: "create__title-label create__label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73
+      },
+      __self: this
+    }, "Title", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      className: "create__title create__input",
+      type: "text",
+      name: "title",
+      placeholder: "Title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "create__checkbox",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 82
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      className: "create__private-label create__label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 83
+      },
+      __self: this
+    }, "Private", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      className: "create__private",
+      type: "checkbox",
+      name: "private",
+      checked: this.state.privatevalue,
+      onChange: this.handleInputChange,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      className: "create__online-label create__label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93
+      },
+      __self: this
+    }, "Online Option", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      className: "create__online",
+      type: "checkbox",
+      name: "online",
+      checked: this.state.onlinevalue,
+      onChange: this.handleInputChange,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95
+      },
+      __self: this
+    }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_multi_select_component__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      className: "create__collaborators",
+      overrideStrings: {
+        selectSomeItems: "Choose Collaborators...",
+        search: "Search"
+      },
+      options: options,
+      value: selected,
+      onChange: selected => this.setState({
+        selected
+      }),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 105
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      type: "text",
+      name: "collaborators",
+      hidden: true,
+      value: JSON.stringify(this.state.selected),
+      onChange: () => {
+        console.log("select changed");
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 115
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      className: "create__description-label create__label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 124
+      },
+      __self: this
+    }, "Description", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+      name: "description",
+      placeholder: "Description",
+      className: "create__description create__input",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 126
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      className: "create__keywords-label create__label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 132
+      },
+      __self: this
+    }, "Keywords", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      className: "create__keywords create__input",
+      type: "text",
+      name: "keywords",
+      placeholder: "Painting, Performance Art, Pencil Drawing, etc",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 134
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      className: "create__city-label create__label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 141
+      },
+      __self: this
+    }, "City", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      className: "create__city create__input",
+      type: "text",
+      name: "city",
+      placeholder: "Vancouver",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 143
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      className: "create__province-label create__label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 150
+      },
+      __self: this
+    }, "Province", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      className: "create__province create__input",
+      type: "text",
+      name: "province",
+      placeholder: "BC",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 152
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      className: "create__country-label create__label",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 159
+      },
+      __self: this
+    }, "Country", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      className: "create__country create__input",
+      type: "text",
+      name: "country",
+      placeholder: "Canada",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 161
+      },
+      __self: this
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "create__submit-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 168
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "create__submit",
+      type: "submit",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 169
+      },
+      __self: this
+    }, "Create"))));
+  }
+
+}
+
+/***/ }),
+
+/***/ "./src/components/EditProject.js":
+/*!***************************************!*\
+  !*** ./src/components/EditProject.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\EditProject.js";
+
+
+const EditProject = props => {
+  console.log(props);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "edit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "edit__upload-header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, "Conversation"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "edit__comments",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, props.project.uploads.map((upload, index) => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: index,
+      className: "edit__comment",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+      className: "edit__name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: undefined
+    }, upload.firstname), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "edit__message",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: undefined
+    }, upload.message), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "edit__image",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: undefined
+    }, upload.image), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "edit__video",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: undefined
+    }, upload.video));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "edit__form",
+    onSubmit: props.handleFormSubmit,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+    className: "edit__textarea",
+    name: "message",
+    placeholder: "Write a message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "edit__upload-label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, "Upload an Image", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "edit__upload",
+    id: "image",
+    type: "file",
+    accept: ".jpg,.jpeg,.png,.tiff,.pdg,.bmp",
+    name: "image",
+    placeholder: "Upload an Image",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "edit__upload-label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  }, "Upload a Video", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "edit__upload",
+    id: "video",
+    type: "file",
+    accept: ".mp4,.png,.mpg,.mpeg,.mpe,.mpv,.avi,.wmv,.mov,.flv,.avchd",
+    name: "image",
+    placeholder: "Upload an Image",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "edit__submit-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "edit__submit",
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "edit__submit-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, "Send")))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (EditProject);
+
+/***/ }),
+
+/***/ "./src/components/Header.js":
+/*!**********************************!*\
+  !*** ./src/components/Header.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _assets_icons_search_icon_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/icons/search-icon.svg */ "./src/assets/icons/search-icon.svg");
+/* harmony import */ var _assets_icons_search_icon_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_icons_search_icon_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_icons_logo_icon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/logo-icon.png */ "./src/assets/icons/logo-icon.png");
+/* harmony import */ var _assets_icons_logo_icon_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_icons_logo_icon_png__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\Header.js";
+
+ //icons
+
+
+
+
+const Header = props => {
+  console.log("header profile", props.profile.profilephoto);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, props.loggedIn ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header__logo-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "header__logo",
+    src: _assets_icons_logo_icon_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "Logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header__search",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: `/search/profiles`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "header__search-icon",
+    src: _assets_icons_search_icon_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "Search",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header__links",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header__profile",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: `/main`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header__profile-icon-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "header__profile-icon",
+    src: props.profile.profilephoto,
+    alt: "Profile",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header__logout",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: `/`,
+    onClick: () => props.logoutClick(),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "header__logout-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  }, "Logout"))))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "loheader",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "loheader__logo-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "loheader__logo",
+    src: _assets_icons_logo_icon_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "Logo",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "loheader__signup-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "loheader__signup",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, "Sign up"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./src/components/Home.js":
+/*!********************************!*\
+  !*** ./src/components/Home.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\Home.js";
+
+
+
+const Home = props => {
+  if (props.loggedIn === false) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      className: "home",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "home__header-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      className: "home__header",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: undefined
+    }, "Fluxus")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      to: `/main`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "home__login-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "home__login",
+      onClick: () => props.loginClick(),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "home__login-text",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: undefined
+    }, "Log In")))));
+  } else {
+    return null;
+  }
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./src/components/ListSubheader.js":
+/*!*****************************************!*\
+  !*** ./src/components/ListSubheader.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\ListSubheader.js";
+
+
+
+function ListSubheader() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subheader",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subheader__container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    to: `/search/profiles`,
+    activeClassName: "subheader__linkto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "subheader__link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "Profiles"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "subheader__container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    to: `/search/projects`,
+    activeClassName: "subheader__linkto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "subheader__link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "Projects"))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ListSubheader);
+
+/***/ }),
+
+/***/ "./src/components/Profile.js":
+/*!***********************************!*\
+  !*** ./src/components/Profile.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _assets_icons_mail_icon_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/icons/mail-icon.svg */ "./src/assets/icons/mail-icon.svg");
+/* harmony import */ var _assets_icons_mail_icon_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_icons_mail_icon_svg__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\Profile.js";
+
+
+
+
+const Profile = props => {
+  let profileId = props.match.params.id;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "profile",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__top",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__top-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__photo-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "profile__photo",
+    src: props.profile.profilephoto,
+    alt: "Profile",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__artphoto-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, props.profile.artphoto ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "profile__artphoto",
+    src: props.profile.artphoto,
+    alt: "Art",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }) : null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__top-left",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__info",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__name-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "profile__name",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: undefined
+  }, props.profile.firstname, " ", props.profile.lastname), props.profile.id !== "0" ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_icons_mail_icon_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "Send Message",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: undefined
+  }) : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__bio",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }, props.profile.bio), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "profile__info-label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  }, "website"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__site",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: undefined
+  }, props.profile.website), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "profile__info-label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: undefined
+  }, "location"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__location",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "profile__city",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: undefined
+  }, `${props.profile.city}, ${props.profile.province}, ${props.profile.country}`)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "profile__info-label",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: undefined
+  }, "medium"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__medium",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }, props.profile.medium)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__bottom",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__projects-section",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__projects-top",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "profile__projects-header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: undefined
+  }, "Projects"), props.profile.id === "0" ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: `/newproject`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "profile__new-project",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: undefined
+  }, "New Project")) : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__projects",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: undefined
+  }, props.projects.map((project, index) => {
+    if (project.creatorid === "0" && props.match.path === "/main") {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        key: index,
+        to: `/project/${project.id}/edit`,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65
+        },
+        __self: undefined
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "profile__project",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: undefined
+      }, project.title));
+    } else if (project.creatorid === String(profileId) && project.creatorid !== "0") {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: `/project/${project.id}`,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: undefined
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "profile__project",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: undefined
+      }, project.title));
+    }
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profile__personalart-section",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "profile__personalart-header",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: undefined
+  }, "Personal Art"), props.profile.personalart.map((personal, index) => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: index,
+      className: "profile__personalart",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+      className: "profile__personal-title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87
+      },
+      __self: undefined
+    }, personal.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "profile__personal-description",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 88
+      },
+      __self: undefined
+    }, personal.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "profile__personal-image",
+      src: personal.image,
+      alt: "Personal Art",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 91
+      },
+      __self: undefined
+    }));
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Profile);
+
+/***/ }),
+
+/***/ "./src/components/ProfileList.js":
+/*!***************************************!*\
+  !*** ./src/components/ProfileList.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _components_ListSubheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/ListSubheader */ "./src/components/ListSubheader.js");
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\ProfileList.js";
+
+
+
+
+const ProfileList = props => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "profiles",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ListSubheader__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }), props.profiles.slice(1).map((profile, index) => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "profiles__link",
+      to: `/profile/${profile.id}`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "profiles__container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "profiles__item-container profiles__item-container--1",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "profiles__pic-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "profiles__pic",
+      src: profile.profilephoto,
+      alt: "Profile",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: undefined
+    }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "profiles__item-container profiles__item-container--2",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "profiles__item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: undefined
+    }, `${profile.firstname} ${profile.lastname}`)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "profiles__item-container profiles__item-container--3",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "profiles__item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: undefined
+    }, `${profile.city}, ${profile.country}`)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "profiles__item-container profiles__item-container--4",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "profiles__item",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: undefined
+    }, profile.medium)))));
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProfileList);
+
+/***/ }),
+
+/***/ "./src/components/Project.js":
+/*!***********************************!*\
+  !*** ./src/components/Project.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\Project.js";
+
+
+
+const Project = props => {
+  console.log("project", props);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "project__title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, props.project.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__settings",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, props.project.private === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__setting-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__setting",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, "Private")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__setting-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__setting",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, "Public")), props.project.id === "0" || props.project.id === "1" ? null : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__join-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "project__join",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: undefined
+  }, "Request to Join")), props.project.onlineoption === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__setting-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__setting",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, "Online Options")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__setting-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__setting",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }, "In Person"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__top-info",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__contributors",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__cont-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "project__creator",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  }, "Creator:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "profiles__link",
+    to: `/profile/${props.project.creatorid}`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "project__creator-name",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: undefined
+  }, props.project.firstname, " ", props.project.lastname))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__cont-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "project__collaborators",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: undefined
+  }, "Collaborators:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "project__collab-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: undefined
+  }, JSON.parse(JSON.stringify(props.project.collaborators)).map(collaborator => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "profiles__link",
+      to: `/profile/${collaborator.id}`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "project__collaborator-name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: undefined
+    }, collaborator.firstname, " ", collaborator.lastname));
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "project__description",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: undefined
+  }, props.project.description)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Project);
+
+/***/ }),
+
+/***/ "./src/components/ProjectList.js":
+/*!***************************************!*\
+  !*** ./src/components/ProjectList.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _components_ListSubheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/ListSubheader */ "./src/components/ListSubheader.js");
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\ProjectList.js";
+
+
+
+
+const ProjectList = props => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "projects",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ListSubheader__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "projects__container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, props.projects.filter(project => project.private === "false" || project.private === false).map((project, index) => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: undefined
+    }, project.creatorid === "0" ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "projects__link",
+      to: `/project/${project.id}/edit`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__project",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: undefined
+    }, project.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__name-loc",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: undefined
+    }, `${project.firstname} ${project.lastname}`), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__location",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: undefined
+    }, `${project.city}, ${project.country}`)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__medium",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: undefined
+    }, project.keywords))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "projects__link",
+      to: `/project/${project.id}`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__project",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__pic",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: undefined
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: undefined
+    }, project.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__name-loc",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: undefined
+    }, `${project.firstname} ${project.lastname}`), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__location",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: undefined
+    }, `${project.city}, ${project.country}`)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__medium",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: undefined
+    }, project.keywords))));
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProjectList);
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App */ "./src/App.js");
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\index.js";
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}), document.getElementById("root"));
+
+/***/ }),
+
+/***/ "./src/styles/main.css":
+/*!*****************************!*\
+  !*** ./src/styles/main.css ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/styles/main.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/styles/main.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./main.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/styles/main.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 1:
+/*!**************************************************************************************************************!*\
+  !*** multi (webpack)/hot/dev-server.js ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\shelb\Documents\BrainStation\capstone\fluxus\client\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! C:\Users\shelb\Documents\BrainStation\capstone\fluxus\client\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\shelb\Documents\BrainStation\capstone\fluxus\client\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[1,"runtime-main",1]]]);
+//# sourceMappingURL=main.chunk.js.map

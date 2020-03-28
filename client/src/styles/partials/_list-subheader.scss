@@ -18,3 +18,11 @@
     @include mobile-subsubheader;
   }
 }
+
+@include medium {
+  .subheader {
+    &__link {
+      @include mobile-subheader;
+    }
+  }
+}

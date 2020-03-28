@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+//subheader menu for projects/profiles search page
+
 function ListSubheader() {
   return (
     <div className="subheader">

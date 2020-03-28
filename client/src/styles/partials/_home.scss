@@ -37,15 +37,40 @@
   }
 }
 
+@include medium {
+  .home {
+    height: 100vh;
+    background-image: url(../assets/backgrounds/sky44.png),
+      url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky33.png),
+      url(../assets/backgrounds/sky22.png);
+    background-position-x: -40px, 100px, 0, 0;
+    background-position-y: 20px, 300px, 0, 600px;
+    background-size: 250px, 800px, 1000px, 800px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+  }
+}
+
 @include huge {
   .home {
+    background-image: url(../assets/backgrounds/sky44.png),
+      url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky33.png);
     background-position-x: -40px, 150px, 500px;
     background-position-y: 20px, 180px, 150px;
-    background-size: 500px, 1200px, 2000px;
+    background-size: 500px, 1600px, 2000px;
     background-repeat: no-repeat, no-repeat, no-repeat;
 
     &__header {
       font-size: 10rem;
+    }
+
+    &__login {
+      height: 5rem;
+      width: 10rem;
+      margin-top: 2rem;
+    }
+
+    &__login-text {
+      font-size: 1.5rem;
     }
   }
 }

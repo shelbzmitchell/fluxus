@@ -1,8 +1,9 @@
 const express = require("express");
 const profilesFile = __dirname + "/../../models/profiles.json";
 const profiles = require(profilesFile);
-// const helper = require("../../helper/helper");
 const router = express.Router();
+
+//get profile info from profiles.json
 
 router.get("/", (req, res) => {
   const profileList = profiles.map(profile => {
@@ -25,6 +26,8 @@ router.get("/", (req, res) => {
   });
   res.json(profileList);
 });
+
+//get profile info according to id
 
 router.get("/:id", (req, res) => {
   const found = profiles.some(profile => profile.id === req.params.id);

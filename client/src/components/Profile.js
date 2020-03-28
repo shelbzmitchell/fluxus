@@ -32,6 +32,7 @@ const Profile = props => {
               <h1 className="profile__name">
                 {props.profile.firstname} {props.profile.lastname}
               </h1>
+              {/* if not main user, show icon to send message */}
               {props.profile.id !== "0" ? (
                 <img src={mail} alt="Send Message" />
               ) : null}
@@ -52,11 +53,15 @@ const Profile = props => {
         <div className="profile__projects-section">
           <div className="profile__projects-top">
             <h2 className="profile__projects-header">Projects</h2>
-            <Link to={`/newproject`}>
-              <button className="profile__new-project">New Project</button>
-            </Link>
+            {/* if main user, show new project button */}
+            {props.profile.id === "0" ? (
+              <Link to={`/newproject`}>
+                <button className="profile__new-project">New Project</button>
+              </Link>
+            ) : null}
           </div>
           <div className="profile__projects">
+            {/* map through projects to show on profile, if main user, edit project component will be rendered as well. Otherwise, just the project component */}
             {props.projects.map((project, index) => {
               if (project.creatorid === "0" && props.match.path === "/main") {
                 return (

@@ -69,3 +69,40 @@
     width: 6rem;
   }
 }
+
+@include huge {
+  .create {
+    padding: 0 180px 8rem 180px;
+    background-image: url(../assets/backgrounds/sky11.png),
+      url(../assets/backgrounds/sky22.png);
+    background-position-x: 0, 900px;
+    background-position-y: 0, 600px;
+    background-size: 1200px, 800px;
+    background-repeat: no-repeat, no-repeat;
+
+    &__header {
+      @include dt-huge-header;
+    }
+
+    &__label {
+      @include mobile-subheader;
+    }
+
+    &__input {
+      @include dt-paragraph;
+    }
+
+    &__submit-container {
+      margin-top: 3rem;
+    }
+
+    &__submit {
+      height: 3rem;
+      width: 8rem;
+    }
+
+    &__submit-text {
+      @include mobile-subheader;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+//login page -- login is state change
+
 const Home = props => {
   if (props.loggedIn === false) {
     return (
@@ -11,7 +13,7 @@ const Home = props => {
         <Link to={`/main`}>
           <div className="home__login-container">
             <button className="home__login" onClick={() => props.loginClick()}>
-              Log In
+              <p className="home__login-text">Log In</p>
             </button>
           </div>
         </Link>

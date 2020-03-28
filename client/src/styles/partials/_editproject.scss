@@ -1,5 +1,5 @@
 .edit {
-  margin: 3rem 1rem 2rem 1rem;
+  margin: 2rem 1rem 2rem 1rem;
   color: $black;
 
   &__comments {
@@ -73,7 +73,7 @@
 
 @include huge {
   .edit {
-    margin: 3rem 180px 2rem 180px;
+    margin: 5rem 180px 2rem 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,8 +86,11 @@
       width: 40%;
     }
     &__submit {
-      height: 4rem;
-      width: 8rem;
+      height: 3rem;
+      width: 7rem;
+    }
+    &__submit-text {
+      @include mobile-subsubheader;
     }
   }
 }

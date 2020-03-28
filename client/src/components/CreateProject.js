@@ -1,31 +1,31 @@
 import React, { Component } from "react";
 import Multiselect from "react-multi-select-component";
 
-//values for multiselect dropdown for collaborators
+//values for multiselect dropdown for collaborators, hard coded for now, but meant to be list of people that main user has recently collaborated with
 const options = [
   {
-    id: "80",
+    id: "8",
     label: "Joanne Weaver",
     value: "Joanne Weaver",
     firstname: "Joanne",
     lastname: "Weaver"
   },
   {
-    id: "81",
+    id: "9",
     label: "Rebecca Woods",
     value: "Rebecca Woods",
     firstname: "Rebecca",
     lastname: "Woods"
   },
   {
-    id: "82",
+    id: "10",
     label: "Yucca Sam",
     value: "Yucca Sam",
     firstname: "Yucca",
     lastname: "Sam"
   },
   {
-    id: "83",
+    id: "11",
     label: "Valley Tom",
     value: "Valley Tom",
     firstname: "Valley",
@@ -58,6 +58,7 @@ export default class CreateProject extends Component {
   };
 
   render() {
+    //for collaborators dropdown
     const { selected } = this.state;
 
     return (
@@ -101,7 +102,7 @@ export default class CreateProject extends Component {
               />
             </label>
           </div>
-
+          {/* library for multiselect dropdown */}
           <Multiselect
             className="create__collaborators"
             overrideStrings={{
@@ -167,10 +168,11 @@ export default class CreateProject extends Component {
           </label>
           <div className="create__submit-container">
             <button className="create__submit" type="submit">
-              Create
+              <p className="create__submit-text">Create</p>
             </button>
           </div>
         </form>
+        {/* on submit, form posts to projects.json, to create a new project */}
       </div>
     );
   }

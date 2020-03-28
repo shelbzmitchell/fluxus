@@ -75,7 +75,6 @@ export default class App extends Component {
         message: event.target.message.value
       })
       .then(response => {
-        console.log(response);
         this.setState({
           projects: response.data
         });
@@ -88,9 +87,8 @@ export default class App extends Component {
 
   //create new project and post to projects.json
   handleCreateFormSubmit = event => {
-    console.log(this.state);
     event.preventDefault();
-
+    //hard coded because it is only ever the main user posting
     axios
       .post("/api/projects", {
         title: event.target.title.value,
@@ -108,7 +106,6 @@ export default class App extends Component {
         uploads: []
       })
       .then(response => {
-        console.log(response);
         this.setState({
           projects: response.data
         });

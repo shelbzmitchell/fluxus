@@ -6,13 +6,14 @@ import searchIcon from "../assets/icons/search-icon.svg";
 import logo from "../assets/icons/logo-icon.png";
 
 const Header = props => {
-  console.log("header profile", props.profile.profilephoto);
   return (
     <>
       {props.loggedIn ? (
         <section className="header">
           <div className="header__logo-container">
-            <img className="header__logo" src={logo} alt="Logo" />
+            <Link to={`/main`}>
+              <img className="header__logo" src={logo} alt="Logo" />
+            </Link>
           </div>
           <div className="header__search">
             <Link to={`/search/profiles`}>
@@ -43,6 +44,7 @@ const Header = props => {
           </div>
         </section>
       ) : (
+        //loheader (logout header) loads when loggedin = false
         <section className="loheader">
           <div className="loheader__logo-container">
             <img className="loheader__logo" src={logo} alt="Logo" />

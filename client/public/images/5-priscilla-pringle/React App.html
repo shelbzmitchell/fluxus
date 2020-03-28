@@ -1,16 +1,53 @@
-@font-face {
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:3000/main -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</style><style type="text/css">@font-face {
   font-family: archivo;
-  src: url("../assets/fonts/Archivo/Archivo-Regular.ttf");
+  src: url(/static/media/Archivo-Regular.4b36aaa8.ttf);
 }
 
 @font-face {
   font-family: archivo-bold;
-  src: url("../assets/fonts/Archivo/Archivo-Bold.ttf");
+  src: url(/static/media/Archivo-Bold.a19cddcf.ttf);
 }
 
 @font-face {
   font-family: archivo-semibold;
-  src: url("../assets/fonts/Archivo/Archivo-SemiBold.ttf");
+  src: url(/static/media/Archivo-SemiBold.1ff14aaf.ttf);
 }
 
 /* Mobile (small) fonts */
@@ -20,8 +57,7 @@ body {
   margin: 0;
   font-family: "archivo", sans-serif;
   height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 16px;
   overflow-x: hidden;
   /*to avoid horizontal scroll */
@@ -30,8 +66,7 @@ body {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -42,8 +77,6 @@ a {
 
 .loheader {
   height: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-bottom: 1rem;
 }
@@ -51,15 +84,9 @@ a {
 .loheader__logo-container {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .loheader__logo {
@@ -70,15 +97,9 @@ a {
 .loheader__signup-container {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .loheader__signup {
@@ -106,26 +127,17 @@ a {
 .header {
   height: 4rem;
   margin: 0.5rem 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   border-bottom: 2px solid #e8cb56;
 }
 
 .header__logo-container {
   width: 25%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__logo {
@@ -135,15 +147,9 @@ a {
 
 .header__search {
   width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__search-icon {
@@ -154,22 +160,14 @@ a {
 .header__links {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header__profile {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .header__profile-icon {
@@ -180,12 +178,8 @@ a {
 
 .header__logout {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .header__logout-text {
@@ -198,8 +192,6 @@ a {
 
 @media only screen and (min-width: 768px) {
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     border: none;
@@ -207,9 +199,7 @@ a {
   .header__logo-container {
     width: 60%;
     height: 100%;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     margin-left: 2rem;
   }
   .header__logo {
@@ -217,7 +207,6 @@ a {
     height: 3rem;
   }
   .header__search {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin-right: 2rem;
@@ -227,17 +216,13 @@ a {
     height: 3rem;
   }
   .header__links {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: 100%;
     border: none;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   .header__profile {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin-right: 2rem;
@@ -280,20 +265,14 @@ a {
 
 .subheader {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .subheader__container {
   margin: 1rem 0;
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .subheader__linkto {
@@ -323,7 +302,7 @@ a {
 .profile {
   padding: 2rem 1.5rem 2rem 1.5rem;
   color: #171717;
-  background-image: url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky22.png);
+  background-image: url(/static/media/sky11.393ea6b9.png), url(/static/media/sky22.adec5325.png);
   background-position-x: -600px, 0;
   background-position-y: 275px, 800px;
   background-size: 800px, 400px;
@@ -339,8 +318,7 @@ a {
 .profile__photo {
   height: 100%;
   position: absolute;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
-          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__artphoto {
@@ -348,8 +326,7 @@ a {
   position: relative;
   bottom: 2rem;
   left: 4rem;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
-          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__name {
@@ -368,8 +345,7 @@ a {
   font-family: "archivo";
   background-color: #ffffff;
   padding: 1rem;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
-          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__info-label {
@@ -387,20 +363,13 @@ a {
   background-color: #ffffff;
   max-height: 20rem;
   overflow-y: scroll;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
-          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__projects-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profile__projects-header {
@@ -424,8 +393,7 @@ a {
   background-color: #ffffff;
   max-height: 20rem;
   overflow-y: scroll;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
-          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .profile__personal-description {
@@ -474,7 +442,7 @@ a {
 @media only screen and (min-width: 768px) {
   .profile {
     padding: 3rem 6rem 0 6rem;
-    background-image: url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky22.png), url(../assets/backgrounds/sky33.png);
+    background-image: url(/static/media/sky11.393ea6b9.png), url(/static/media/sky22.adec5325.png), url(/static/media/sky33.7e0aa91c.png);
     background-position-x: -400px, 150px, 0;
     background-position-y: 300px, 800px, 1000px;
     background-size: 900px, 700px, 700px;
@@ -494,19 +462,14 @@ a {
 @media only screen and (min-width: 1440px) {
   .profile {
     padding: 3rem 10rem 0 10rem;
-    background-image: url(../assets/backgrounds/sky11.png);
+    background-image: url(/static/media/sky11.393ea6b9.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
   .profile__top {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     width: 100%;
     margin-top: 4rem;
   }
@@ -544,8 +507,6 @@ a {
   }
   .profile__bottom {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 2rem;
     padding-bottom: 2rem;
@@ -554,7 +515,6 @@ a {
     width: 50%;
     margin-right: 2rem;
     margin-top: 0;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -584,7 +544,7 @@ a {
 .project {
   padding: 2rem 1rem 0 1rem;
   color: #171717;
-  background-image: url(../assets/backgrounds/sky11.png);
+  background-image: url(/static/media/sky11.393ea6b9.png);
   background-position-x: 0;
   background-position-y: 0;
   background-size: 1800px;
@@ -600,22 +560,14 @@ a {
 }
 
 .project__settings {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem;
 }
 
 .project__setting-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 6rem;
   height: 2rem;
   background-color: #ffffff;
@@ -662,13 +614,10 @@ a {
 .project__contributors {
   background-color: white;
   padding: 1rem;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
-          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .project__cont-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -685,8 +634,7 @@ a {
   font-family: "archivo";
   background-color: #ffffff;
   padding: 1rem;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
-          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 @media only screen and (min-width: 768px) {
@@ -695,20 +643,15 @@ a {
     background-size: 2000px;
   }
   .project__top-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   .project__contributors {
     width: 45%;
   }
   .project__description {
     width: 45%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -723,17 +666,12 @@ a {
 
 .profiles {
   padding: 0 1rem;
-  height: 100vh;
-  overflow-y: scroll;
 }
 
 .profiles__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   border-bottom: 1px solid #e8cb56;
   padding: 0.5rem;
@@ -742,28 +680,20 @@ a {
 }
 
 .profiles__item-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .profiles__item-container--1 {
   width: 30%;
   height: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 1rem;
 }
 
 .profiles__item-container--2 {
   width: 70%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-size: 1.2rem;
   line-height: 1.4rem;
   font-family: "archivo-semibold";
@@ -794,12 +724,8 @@ a {
   width: 50px;
   height: 50px;
   background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -827,7 +753,7 @@ a {
 @media only screen and (min-width: 1440px) {
   .profiles {
     padding: 3rem 10rem;
-    background-image: url(../assets/backgrounds/sky11.png);
+    background-image: url(/static/media/sky11.393ea6b9.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -836,11 +762,8 @@ a {
     width: 100%;
   }
   .profiles__item-container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    align-items: center;
+    flex-wrap: nowrap;
     background-color: #ffffff;
     width: 100%;
     font-size: 1rem;
@@ -852,9 +775,7 @@ a {
   .profiles__item-container--1 {
     padding: 0;
     width: 10%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .profiles__item-container--2 {
     width: 30%;
@@ -879,13 +800,8 @@ a {
 }
 
 .projects__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .projects__project {
@@ -906,11 +822,8 @@ a {
 }
 
 .projects__name-loc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .projects__name {
@@ -925,7 +838,7 @@ a {
 @media only screen and (min-width: 1440px) {
   .projects {
     padding: 3rem 10rem;
-    background-image: url(../assets/backgrounds/sky11.png);
+    background-image: url(/static/media/sky11.393ea6b9.png);
     background-position: center;
     background-size: cover;
     background-repeat: repeat-y;
@@ -934,7 +847,7 @@ a {
 
 .home {
   height: 100vh;
-  background-image: url(../assets/backgrounds/sky44.png), url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky33.png);
+  background-image: url(/static/media/sky44.8e6d4a1e.png), url(/static/media/sky11.393ea6b9.png), url(/static/media/sky33.7e0aa91c.png);
   background-position-x: -40px, 100px, 0;
   background-position-y: 20px, 300px, 0;
   background-size: 250px, 800px, 1000px;
@@ -948,26 +861,16 @@ a {
 
 .home__header-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 50vh;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 
 .home__login-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .home__login {
@@ -983,7 +886,7 @@ a {
 @media only screen and (min-width: 768px) {
   .home {
     height: 100vh;
-    background-image: url(../assets/backgrounds/sky44.png), url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky33.png), url(../assets/backgrounds/sky22.png);
+    background-image: url(/static/media/sky44.8e6d4a1e.png), url(/static/media/sky11.393ea6b9.png), url(/static/media/sky33.7e0aa91c.png), url(/static/media/sky22.adec5325.png);
     background-position-x: -40px, 100px, 0, 0;
     background-position-y: 20px, 300px, 0, 600px;
     background-size: 250px, 800px, 1000px, 800px;
@@ -994,7 +897,7 @@ a {
 
 @media only screen and (min-width: 1440px) {
   .home {
-    background-image: url(../assets/backgrounds/sky44.png), url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky33.png);
+    background-image: url(/static/media/sky44.8e6d4a1e.png), url(/static/media/sky11.393ea6b9.png), url(/static/media/sky33.7e0aa91c.png);
     background-position-x: -40px, 150px, 500px;
     background-position-y: 20px, 180px, 150px;
     background-size: 500px, 1600px, 2000px;
@@ -1029,8 +932,7 @@ a {
   background-color: #ffffff;
   max-height: 400px;
   overflow-y: scroll;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
-          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .edit__upload-header {
@@ -1054,14 +956,9 @@ a {
 }
 
 .edit__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .edit__textarea {
@@ -1091,12 +988,8 @@ a {
 }
 
 .edit__submit-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -1113,16 +1006,9 @@ a {
 @media only screen and (min-width: 1440px) {
   .edit {
     margin: 5rem 180px 2rem 180px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .edit__comments {
     width: 60%;
@@ -1145,7 +1031,7 @@ a {
   padding: 0 1rem;
   padding-bottom: 2rem;
   color: #171717;
-  background-image: url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky22.png);
+  background-image: url(/static/media/sky11.393ea6b9.png), url(/static/media/sky22.adec5325.png);
   background-position-x: 0, 0;
   background-position-y: 0, 500px;
   background-size: 800px, 400px;
@@ -1154,12 +1040,8 @@ a {
 
 .create__header-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .create__header {
@@ -1171,27 +1053,17 @@ a {
 }
 
 .create__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   color: #171717;
   background-color: #ffffff;
   padding: 1rem;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
-          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.64);
 }
 
 .create__checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .create__private, .create__online {
@@ -1219,12 +1091,8 @@ a {
 
 .create__submit-container {
   margin-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -1236,47 +1104,20 @@ a {
   font-family: "archivo";
   height: 2rem;
   width: 6rem;
-}
+}</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><section class="header"><div class="header__logo-container"><img class="header__logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX///8BAAIAAABTU1O9vb3Y2Njt7e35+fm5ubn8/PxHR0fe3t6ZmZnS0tLDw8OFhYZqamv19fWRkZHm5uagoKCvr696enpeXl4/Pz/q6uqpqalubm7KysoyMjJra2tNTU0qKiqAgIBBQUEZGRmTk5MQEBAfHyA5OTkMDA1aWlqcnJwuLi4lJSYZGBn1CjOmAAAKnUlEQVR4nO1dZ5uiMBDWUOygFFHRZXWxu///7x3oKikTQYWQ3MP77e5GnfdSJlMyabUaNGjQoEGDBg0aNGjQoEEDVaGH2rRbtxIVwlyhFPtJ3YpUhQ5C7RRo26lblYpg3wgmFJ26VakI6MEQ8YV0DR2CkTilysT8wbCNljwh7bpSkS1SsdJgYgx5DIKbDEKeUNXKwi5juIIlRvf/BIR6YnUrB17GEMEGY51JKGk1B9g0hfeSYyYQCFauHGzzhijERlmwbuUgygjEoID/EGijgWDlSsE0Y7gGBSZI8YU4zPSfwhL9TELJc88pl6GTSYRidSsH+WOYLUTUF6tbOVjnrcPWMpO4iNWtHGB76RCWGGQSW7G6lYJe/k6ZHQpQW6xypWCEWTsDFjHUHkPMHCKOl9/NRM5ilSsDuDmPODKYtTgKVa4UfGGT9MSR6efuthJDRxhDF5bBnWRfrHqfw8UJchzgVpy/F0kLnCDXVnSQut7TiCC440iF2BB+CdXvY5xwgm2kw1JdfCJbYjX8DO6MJMg5Uxs4QZUm6Twk+CXKz0E5ciJzzq0SwhgjmiBsBhYEQd6ZRzroM4ofLxg8OZITeSFa0/fg72h6ie5jSHJBjfNetKpvoXsA+IEE/d9iK1UuzCOWX6I6G7wwY3oiIyXCbB6z/tpgvmUUsAtVhShbRwP5belQvtEH/iN4QSqZYP5C/BjNTdqQ3OQU8JoGkN5oQ/sKnIkMh/ulggsR/KGPouYM4JcIKnAcnbA7B5oxm6MF84tUqEPZ0Fs/CllfdgFOUDXceoey3cgGhmUIrlRbicS2QR4vUWACQizBdKeFJCXEniQIurpd5gyDtp4KCzCFTrhAfVBteq9FSFNgA70DH0JeSHdFrVTGUMqMAU5Qg2Vich7/KjR+LTLc+QOLmKQrr1qi9xsLd3KK79YEQSUMIAY8Js8p+MFSiLytVmbo+TF5vGBGuREkChE4qxDLcyvhB9LAarY42uMpRJVivncEmfqcaKCFDaEiAUMCWHqTE0vC5rEyMV8cm1yGYe5mKze03ATuLJNQsswZW4ecPH1b8dJDrJoEjN1j9xGeVOvLjEWm/wGWUJ3hMvdMs1N8luLnUtjkR4rvNJhzyzF3Ye5KlRxYzRZciH7KXamSA/PxYYb4qU3N21vn7HYaGIXCV6piBTN/eMTaeOGJldq+RQu7e8aJf8YYQ1VCpBTWt5u+vAC2q/wYtlpzz7afRAgf/oeazkUB3BMbHHPyP8BPU7+qZNLeg5Fe9e2LDuV3JhPTdN2BMVpaejeFv/C8YezYGBwnHnrewr/+u24tR8bAdU1zMnk57+dWnSnszRMqln9y7DDo71fnyy/6DD+X1WoWBVM79vyUeB2pwJ7pjnTfs7+0M0/N9nvgfds+CJ1F1zLmFZu9iWF5drjZlcHlXd6HSzR1FstBycE1d+k7wUwwrzyu/fHQNz6vypssT+GlZlogHkRX08XozQHtjbxgJyE3Anea4eJVmz+IZ5Jzw3FT9egVnrOufVGH3R1XjfeFyjD0jXLs7kgVH+cdcKyLouz+kHCMni1JEyo3VgwIKo9+DKD6/FIgtONc2IOK/NQEgsPkXtkEeYdW+OxZ8k8DFJfv/sozvbe7y2q/6UdaEATj8dc4Q/IXgRb1Z/vz5efpV7yrFGM3mHLcV2j9nmfHcO04Q8/Xl6PU1zNfdvR6k3nqU46W3cUpdpz1l7b/3r5PFs3oHxgX+Dz+a7sonN48GnNSXRa9M0k8Navr2dPxpv0aV7p6YfD0Q49v/u5/xQurhCP9W+i5RkI22PwUYUpHGLlD+PdV5zDWR6YsJQ+d+bJrB4fnNMn4FLgKb59fjT2LY17qRmfQdY5bHkvy0prOiqSfG3vv+l4CYVpOBJFECA/x2Iih9x0rFGbtLacsRyL5HSGKYKBSOfEN3TNd9I3fW9sikqCaGceYulyJJ78p8mrVS2cISYZ405M2+U+q5gGmJA38rj49S5UsUEn2S5IGXuG/o3caTb0yI/+b3mnwrOI3ay3Q1JLfFt5h+uwdYHKnmcEWPxou5U+Qz3X7DB5riGhGAB7ubp5REHfLThOUBNPwbY1/NiXs4ZR7Sv873f4c1541kOVSX8fQ42n/kONfEIWp9KkNppn47P3A9rrLwbyOQZ24o67nhNq+oJ9IGD3vuSzDNP3y2dd66OvWaPBG4rYgEgfYWFr6wpkGZKqymLb4yQzwLYoyvXn8q00UhOv4dA1jGMbAnb/o+XfMNIhhJA79whs607HWn52ZdPJLSpLlcKMXP/ycL4nt7juNRqWItGD8FRy16PqnTRqFOjz/8AdqtYmiTbOaUGkO93KI8H8cnyO9/yYYnIG6lrn6DxmS6YvwP2RIekgFzYVCoAP7H22mUoBtoUEeqRXfapLt+HCkfCe6AxbgXaiC1NxoOn3yZDqd5ZxMZcXVmmp+OiFp/5cONlnKMbydFc72n6NOZQfZ9FpHoYX4dxBaBSfMQafsHdAyUlOGIdqdFvpoTjo0dOYFaAe5UIch1OBqSBEESr8rOnyXDwS2RqaHELrEv1GFIdTq0aftPdRrT5WDG3jbcEtPUiizpMg0BW8A0aODvgGC+PNBMgO6Tsn2dYNvlb4YrKkHYOaPDoaS6V8MBwUoQvPPYIaQdw9qqAJDoMkHHaDgZ3hfrIuqA9A9PGZguK32VYhlAIcxtj/mk/Qn0ExTLkAX15kg2tP7lkWq2+oEcFRhHdunDQiel7fVDmAI2aLRnAcd5R5EdhUCB7GcOgupVyIwOmwkO/flI36utH6wC4ydcvmt6SS2iexzJMARpcAjctI6UYhptKMDi7DIozl05YksYHqYjvLqL3iAPigBmEcOoE2xYOc2OTcb2lJADnvRDphS5jDox+FMyNUr3D3i7csl1YGODoIhlxe6C67lY0geSOERfKUu9iwZRWqOzsFJ9tJbD5Id3qggMPAkRJsbX+OhKxdD4jANbxMvP5kj01Ikt0i60fyfzOutBfvSUEQ/uEsBvIVwFXr96bEe8MBLLSAXYcgh+E4/M0l2G8IGTMD3VjjZmnzIcUDFpx8T+r3L/LxZ7wp4J8KBpyl4N5W5Qfx81H+7G3NoOwGX4Ae3B0u/3/0i0PdjG+Uelgs5vXzEtVLEcoXTighyzY8QZNNvCbwOeJf5+J5dfRP14TF1OEYQl/kEfk0UH9PP55dJf7TJZKinIch9+hkcI3+V+S2pmxvP0FaJv+nn8kzEVWRW2kWP+U40xdv0m3N30KtIqb11j2KH8ersDcJn9xRQ2Q8ZOyIpon2nZWlP72G84Q/mQWAADgUT7zeHH7f37geAX4qsguAeaB9AEazogdG1KIp51+6qe9xJilAxQlGFPU0749o5oqofBlpua/Y2jtU3pRVqN2h+Yp5Xc2vqzJfwo2+JVAboMXcBBCORvY7AZ6Kr5bcS3Mii44jkiNClhmYkE1Eck5/5qanZihiOyfyssZlMp+r1mHz9rO6OR3qVSSo5WnK5lTKsm12KKmtS5Xi7Ec6ql8TwIEXDmCoZRvk/LwBfFTKU4wnV6qapHBtNi3rivFSC0vRUexa4/YSgRI3x/MKdaF7ASgJjn6Gn22OtTISxmv03GzRo0KBBgwYNGjRo0KCB1PgHRmysYN00B/IAAAAASUVORK5CYII=" alt="Logo"></div><div class="header__search"><a href="http://localhost:3000/search/profiles"><img class="header__search-icon" src="./React App_files/search-icon.d378117f.svg" alt="Search"></a></div><div class="header__links"><div class="header__profile"><a href="http://localhost:3000/main"><div class="header__profile-icon-container"><img class="header__profile-icon" src="./React App_files/adrienne-prof.jpg" alt="Profile"></div></a></div><div class="header__logout"><a href="http://localhost:3000/"><h3 class="header__logout-text">Logout</h3></a></div></div></section><section class="profile"><div class="profile__top"><div class="profile__top-right"><div class="profile__photo-container"><img class="profile__photo" src="./React App_files/adrienne-prof.jpg" alt="Profile"></div><div class="profile__artphoto-container"><img class="profile__artphoto" src="./React App_files/adrienne-artphoto.jpg" alt="Art"></div></div><div class="profile__top-left"><div class="profile__info"><div class="profile__name-container"><h1 class="profile__name">Adrienne Mountain</h1></div><div class="profile__bio">I'm an experimental animator and video artist originally from Toronto, Canada. My work often explores the metaphysical, as well as body politics and female identity.</div><h4 class="profile__info-label">website</h4><div class="profile__site">http://adriennemountain.com/</div><h4 class="profile__info-label">location</h4><div class="profile__location"><p class="profile__city">Yucca Valley, California, USA</p></div><h4 class="profile__info-label">medium</h4><div class="profile__medium">Music Videos, Film, Painting, Animation, Live Projection</div></div></div></div><div class="profile__bottom"><div class="profile__projects-section"><div class="profile__projects-top"><h2 class="profile__projects-header">Projects</h2><a href="http://localhost:3000/newproject"><button class="profile__new-project">New Project</button></a></div><div class="profile__projects"><a href="http://localhost:3000/project/0/edit"><p class="profile__project">Yucca Valley Sound Collection</p></a><a href="http://localhost:3000/project/1/edit"><p class="profile__project">Ontario Cottage Fabrics</p></a><a href="http://localhost:3000/project/7/edit"><p class="profile__project">PRoject</p></a></div></div><div class="profile__personalart-section"><h2 class="profile__personalart-header">Personal Art</h2><div class="profile__personalart"><h4 class="profile__personal-title">Lady Strips</h4><p class="profile__personal-description">A sultry strip tease with a surprise ;)</p><img class="profile__personal-image" src="./React App_files/adrienne-personal1.png" alt="Personal Art"></div><div class="profile__personalart"><h4 class="profile__personal-title">Pillow Party</h4><p class="profile__personal-description">Live interactive projection performance and installation in collaboration with Sonia Beckwith Cole.</p><img class="profile__personal-image" src="./React App_files/adrienne-personal2.jpg" alt="Personal Art"></div></div></div></section></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-@media only screen and (min-width: 1440px) {
-  .create {
-    padding: 0 180px 8rem 180px;
-    background-image: url(../assets/backgrounds/sky11.png), url(../assets/backgrounds/sky22.png);
-    background-position-x: 0, 900px;
-    background-position-y: 0, 600px;
-    background-size: 1200px, 800px;
-    background-repeat: no-repeat, no-repeat;
-  }
-  .create__header {
-    font-size: 3.75rem;
-    /* 60px */
-    line-height: 4.25rem;
-    /* 68px */
-    font-family: "archivo-bold";
-  }
-  .create__label {
-    font-size: 1.75rem;
-    line-height: 2rem;
-    font-family: "archivo-semibold";
-  }
-  .create__input {
-    font-size: 1rem;
-    /* 14px */
-    line-height: 1.375rem;
-    /* 22px */
-    font-family: "archivo";
-  }
-  .create__submit-container {
-    margin-top: 3rem;
-  }
-  .create__submit {
-    height: 3rem;
-    width: 8rem;
-  }
-  .create__submit-text {
-    font-size: 1.75rem;
-    line-height: 2rem;
-    font-family: "archivo-semibold";
-  }
-}
-/*# sourceMappingURL=main.css.map */
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js.download"></script><script src="./React App_files/1.chunk.js.download"></script><script src="./React App_files/main.chunk.js.download"></script><script src="./React App_files/main.578c9f6ae98cac90947c.hot-update.js.download"></script>
+
+</body></html>

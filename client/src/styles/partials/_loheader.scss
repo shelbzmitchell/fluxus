@@ -29,3 +29,17 @@
     color: $yellowish;
   }
 }
+
+@include huge {
+  .loheader {
+    margin-top: 2rem;
+    &__logo {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &__signup {
+      @include mobile-subheader;
+    }
+  }
+}

@@ -6,9 +6,10 @@ const ProfileList = props => {
   return (
     <div className="profiles">
       <ListSubheader />
-      {props.profiles.slice(1).map(profile => {
+      {/* map through profiles to show on search page, slice first item in array because it's main user profile */}
+      {props.profiles.slice(1).map((profile, index) => {
         return (
-          <>
+          <div key={index}>
             <Link className="profiles__link" to={`/profile/${profile.id}`}>
               <div className="profiles__container">
                 <div className="profiles__item-container profiles__item-container--1">
@@ -32,7 +33,7 @@ const ProfileList = props => {
                 </div>
               </div>
             </Link>
-          </>
+          </div>
         );
       })}
     </div>

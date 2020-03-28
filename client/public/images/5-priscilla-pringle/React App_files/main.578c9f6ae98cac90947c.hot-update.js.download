@@ -1,0 +1,166 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/components/ProjectList.js":
+/*!***************************************!*\
+  !*** ./src/components/ProjectList.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _components_ListSubheader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/ListSubheader */ "./src/components/ListSubheader.js");
+var _jsxFileName = "C:\\Users\\shelb\\Documents\\BrainStation\\capstone\\fluxus\\client\\src\\components\\ProjectList.js";
+
+
+
+
+const ProjectList = props => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "projects",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ListSubheader__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "projects__container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, props.projects.filter(project => project.private === "false" || project.private === false).map((project, index) => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: undefined
+    }, project.creatorid === "0" ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "projects__link",
+      to: `/project/${project.id}/edit`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__project",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: undefined
+    }, project.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__name-loc",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: undefined
+    }, `${project.firstname} ${project.lastname}`), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__location",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: undefined
+    }, `${project.city}, ${project.country}`)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__medium",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: undefined
+    }, project.keywords))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      className: "projects__link",
+      to: `/project/${project.id}`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__project",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 36
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__pic",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: undefined
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__title",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38
+      },
+      __self: undefined
+    }, project.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "projects__name-loc",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: undefined
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: undefined
+    }, `${project.firstname} ${project.lastname}`), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__location",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41
+      },
+      __self: undefined
+    }, `${project.city}, ${project.country}`)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      className: "projects__medium",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      },
+      __self: undefined
+    }, project.keywords))));
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProjectList);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.578c9f6ae98cac90947c.hot-update.js.map

@@ -30,3 +30,13 @@
     font-style: italic;
   }
 }
+
+@include huge {
+  .projects {
+    padding: 3rem 10rem;
+    background-image: url(../assets/backgrounds/sky11.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+}

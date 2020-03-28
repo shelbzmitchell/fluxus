@@ -7,8 +7,12 @@ const ProjectList = props => {
     <div className="projects">
       <ListSubheader />
       <div className="projects__container">
+        {/* only show projects that are set to public */}
         {props.projects
-          .filter(project => project.private === "false")
+          .filter(
+            project => project.private === "false" || project.private === false
+          )
+          // if project is by main user, render edit project page
           .map((project, index) => {
             return (
               <div key={index}>
@@ -27,6 +31,7 @@ const ProjectList = props => {
                     </div>
                   </Link>
                 ) : (
+                  //otherwise, just render normal project page
                   <Link
                     className="projects__link"
                     to={`/project/${project.id}`}

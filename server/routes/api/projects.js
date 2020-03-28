@@ -4,6 +4,8 @@ const projects = require(projectsFile);
 const helper = require("../../helper/helper");
 const router = express.Router();
 
+//get project info from projects.json
+
 router.get("/", (req, res) => {
   const projectList = projects.map(project => {
     return {
@@ -24,6 +26,8 @@ router.get("/", (req, res) => {
   });
   res.json(projectList);
 });
+
+//get project info according to id
 
 router.get("/:id", (req, res) => {
   const found = projects.some(project => project.id === req.params.id);
